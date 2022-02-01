@@ -1,0 +1,734 @@
+*{
+    margin: 0;
+    padding: 0
+}
+html{
+    min-width: 160px;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'RajdhaniLight';
+    src: url(fonts/Rajdhani-Light.ttf);
+}
+@font-face{
+    font-family: 'RajdhaniBold';
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
+/* HEADER */
+.header{
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 999;
+    min-width: 160px;
+}
+header.page_header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#apple_icon{
+    height: 40px;
+    width:40px;
+    background: url(images/icons/apple_icon.svg) center no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+#search_block{
+    height: 50px;
+    width: 50px;
+    background: url(images/icons/search_icon.svg) center no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+.header_menu_button{
+    height: 50px;
+    width: 50px;
+    background: url(images/icons/menu_icon.svg) center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+#btnx{
+    height: 50px;
+    width: 50px;
+    background: url(images/icons/cross.svg) center no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+ul.header_menu{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 160px;
+    transition: all 1.5s ease;
+}
+a.menu_links{
+    font-family: RajdhaniLight;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+a.menu_links:hover{
+    opacity: 0.6;
+}
+/* search block */
+#search{
+  display: none;
+  width: 60%;
+  height: 50px;
+  background:rgba(0,0,0,0.1) url(images/icons/search_icon.svg) left center no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 50px;
+  font-family: RajdhaniLight;
+
+}
+#btnxx{
+    height: 50px;
+    width: 50px;
+    background: url(images/icons/cross.svg) center no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* menu styles */
+/* menu styles */
+
+.text_wrap{
+    display: none;
+}
+.text_bold{
+    font-family: RajdhaniBold;
+}
+@media(min-width:1025px){
+    .header_menu_button{display: none;}
+    ul.header_menu{
+        display: flex;order: 1;flex-grow: 0.3;}
+    #apple_icon{order: 2;}
+    #search_block{order: 3;}
+}
+/* First page */
+/* First page */
+div.first_page_block{
+    background: #F9F0EB;
+    height: 600px;
+    position: relative;
+    padding: 55px 5% 0 5%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.iphone_8_block{
+    height: 450px;
+    background:url(images/iphone_8.jpg) center bottom no-repeat;    
+    background-size: contain; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+h1.iphone_8_text,
+h2.iphone_10_text{
+    text-align: center;
+    line-height:100px;
+    width: 100%;
+    font-family: RajdhaniLight;
+    color: #434343;
+    font-size: 50px;
+}
+/* Second page */
+/* Second page */
+div.second_page_block{
+    background: #FAFAFA;
+    height: 400px;
+    position: relative;
+    padding: 30px 5% 0 5%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.iphone_10_block{
+    height:225px;
+    background:url(images/iphone_x_.jpg) center bottom no-repeat;    
+    background-size: 950px; 
+}
+/* Third block */
+/* Third block */
+.third_page_block{
+    width: 90%;
+    height: 480px;
+    background: url(images/iphone_7.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: table;
+    max-width: 1600px;
+    margin: 10px auto;
+    padding: 0 5%;
+}
+.iphone_colors{
+    text-align: center;
+    font-family: RajdhaniLight;
+    color: #FAFAFA;
+    font-size: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* fourth block */
+div.fourth_page_block{
+    width: 90%;
+    height: 480px;
+    background: url(images/howtoshoot_large.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 10px auto;
+    padding: 0 5%;
+}
+div.fourth_page_block div h3{
+    font-family: RajdhaniBold;
+    font-size: 35px;
+    color: white;
+}
+div.fourth_page_block div h3 span{
+    font-size: 45px;
+    color:white;
+    background: url(images/howtoshoot_textoverlay_large.jpg) center no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+div.fourth_page_block div p{
+    font-family: RajdhaniLight;
+    color: white;
+}
+/* fifth block*/
+div.fifth_page_block{
+    height: 100px;
+}
+div.fifth_page_block h3{
+    text-align: center;
+    font-family: RajdhaniBold;
+    font-size: 50px;
+    line-height: 100px;
+    color: #434343;
+    background: url(images/iphone_x_.jpg) center no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+    
+}
+/*sixth page block*/
+    .sixth_page_block {
+        width: 90%;
+        height: 480px;
+        background: url(images/product_film_large.jpg) center no-repeat;
+        background-size: cover;
+        max-width: 1600px;
+        margin: 10px auto 0 auto;
+        padding: 0 5%;
+        position: relative;
+}
+
+/* preview_block*/
+.iphone_10_preview{
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px auto 5px auto;
+}
+.iphone_10_preview  .preview_block{
+    width: 49.5%;
+    position: relative;
+}
+ .content_text{
+    position: absolute;
+    width: calc(100%);
+    top: 0;
+    -webkit-transition:  all ease 0.7s;
+    color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+.content_text div{
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.content_text h4{
+    font-family: RajdhaniBold;
+    font-size: 45px;
+}
+.content_text h5{
+    font-family: RajdhaniLight;
+    font-size: 30px;
+}
+.preview_block:hover .content_text{
+    color: white;
+    background: rgba(0,0,0,0.5)
+}
+
+/* FOOTER */
+footer .heading_footer{
+    background: rebeccapurple;
+    background-image: linear-gradient(#d4e2ef,#f2f2f2);
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+.heading_footer h6{
+    font-family: RajdhaniBold;
+    font-size: 30px;
+    color: #434343;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+h6 #mercer{
+    background: url(images/iphone_x_.jpg) center no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+.social{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+.socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.socials a{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+.socials a:nth-child(1){
+    background: url(images/icons/linkedin-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(2){
+    background: url(images/icons/instagram-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(3){
+    background: url(images/icons/facebook-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(4){
+    background: url(images/icons/skype-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(5){
+    background: url(images/icons/place-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+footer .main_footer{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 30px 0 30px 0;
+}
+ul.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    max-width: 1600px;
+    margin: 0 auto;
+    list-style-type: none;
+    width: 70%;
+}
+.footer_menu a{
+    font-family: RajdhaniLight;
+    font-weight: bold;
+    font-size: 20px;
+    color:#434343;
+    padding: 5px;
+}
+.footer_menu a:hover{
+    color: black;
+}
+.license{
+    padding:25px  0 7px 0;
+    width: 100%;
+    background: #121212;
+}
+.license h6{
+    font-family: monospace;;
+    text-align: center;
+    padding: 15px; 
+    color: slategrey;
+    font-size: 14px;
+}
+.apple_logo{
+    height: 40px;
+    width: 100%;
+    background: black;
+    background: url(images/icons/apple_icon.svg) center no-repeat;
+    background-size: 40px;
+}
+@media(min-width:1024px){
+    div.sixth_page_block{
+        background: url(images/product_film_xlarge.jpg) center no-repeat;
+        background-size: cover;
+    }
+
+}
+@media(max-width: 1023px){
+    /* menu */
+    ul.header_menu{
+        position: fixed;
+        left: -150%;
+        top: 80px;
+        background: #121212;
+        height: 100vh;
+        width: 70%;
+        padding: 0 15%;
+        z-index: 999;
+    }
+    ul.header_menu li{
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+/* end menu */
+    div.first_page_block{
+        height: 435px;
+        padding: 85px 0 0 0;
+     }
+     
+    h1.iphone_8_text{
+      font-size: 35px;
+      line-height: 50px;
+}
+.iphone_8_block{
+    width:100%;
+    background-size:400px 345px;
+    height: 365px;
+}
+/* SECOND BLOCK */
+div.second_page_block{
+    height: 235px;
+    padding: 30px 0 0 0;
+}
+    .iphone_10_block{
+        height: 135px;
+        background-size: 480px 110px;
+    }
+    h2.iphone_10_text{
+        line-height: 50px;
+        font-size: 30px;
+        
+    }
+    /* THIRD BLOCK */
+div.third_page_block{
+        height: 360px;
+    }
+    .iphone_colors{
+        font-size: 30px;
+    }
+    /*sixth page block*/
+.sixth_page_block {
+    height: 360px;
+    background: url(images/product_film_large.jpg) center no-repeat;
+    background-size: cover;
+    width: 90%;
+}
+.content_text h4{
+    font-size: 30px;
+    line-height: 50px;
+}
+.content_text h5{
+    font-size: 15px;
+}
+}
+@media(max-width:768px){
+.sixth_page_block {
+    background: url(images/product_film_medium.jpg) center no-repeat;
+    background-size: cover;
+}
+.content_text h4{
+    font-size: 22px;
+    line-height: 35px;
+}
+.content_text h5{
+    font-size: 12px;
+}
+.socials{
+    width: 85%;
+}
+.footer_menu a{
+    font-size: 18px;
+}
+ul.footer_menu{
+    width: 96%;
+}
+}
+/* media queries for max 480*/
+/* media queries for max 480*/
+@media(max-width:480px){
+    ul.header_menu {
+        top: 55px;
+    }
+    header.page_header{
+        height: 55px;
+    }
+    #apple_icon,
+    #search_block,
+    .header_menu_button{
+        height: 30px;
+        width:30px;
+        background-size: 30px;
+    }
+    #search{
+        height: 40px;
+        font-size: 15px;
+        background-size: 30px;
+    }
+    #btnxx{
+        height: 30px;
+        width: 30px;
+        background-size: 15px;
+    }
+    #btnx{
+        height: 30px;
+        width: 30px;
+        background-size: 15px;
+    }
+    h1.iphone_8_text,
+    h2.iphone_10_text,
+    .iphone_colors{
+        font-size: 15px;
+        line-height: 30px;
+   }
+
+   div.first_page_block{
+    height: 200px;
+    padding: 55px 0 0 0;  
+}
+.iphone_8_block{
+    width: 100%;
+    height: 155px;
+    background-size: contain; 
+}
+
+div.second_page_block{
+    height: 120px;
+    padding: 15px 0 0 0;
+}
+.iphone_10_block{
+    height: 65px;
+    background-size: 300px 55px;
+}
+
+div.third_page_block{
+    height: 260px;
+}
+div.fifth_page_block{
+    height: 50px;
+}
+div.fifth_page_block h3{
+    font-size: 25px;
+    line-height: 50px;
+}
+.sixth_page_block {
+    height: 220px;
+    background: url(images/product_film_small.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.iphone_10_preview{
+    width: 98%;
+    margin:0 auto;
+}
+.iphone_10_preview .preview_block{
+    width: 100%;
+}
+footer .heading_footer{
+    height: 105px;
+}
+.heading_footer h6{
+    font-size: 20px;
+    padding: 20px 0 0 0;
+}
+.social{
+    bottom: 20px;
+}
+.socials{
+    width: 100%;
+}
+.socials a.link{
+    height: 25px;
+    width: 25px;
+    background-size: 25px;
+} 
+footer .main_footer{
+    padding: 15px 0 15px 0;
+}
+ul.footer_menu{
+    flex-direction: column;
+}
+ul.footer_menu li{
+    padding: 5px;
+}
+}
+@media(max-width:320px){
+    ul.header_menu {
+        top: 40px;
+    }
+    header.page_header{
+        height: 40px;
+    }
+    #apple_icon,
+    #search_block,
+    .header_menu_button{
+        height: 17px;
+        width:17px;
+        background-size: 17px;
+    }
+    #search{
+        height: 25px;
+        font-size: 10px;
+        background-size: 17px;
+        padding: 5px 15px;
+    }
+    #btnxx{
+        height: 25px;
+        width: 25px;
+        background-size: 9px;
+    }
+
+
+
+    #btnx{
+        height: 17px;
+        width: 17px;
+        background-size: 9.5px;
+    }
+    h1.iphone_8_text,
+    h2.iphone_10_text,
+    .iphone_colors{
+        font-size: 15px;
+        line-height: 20px;
+   }
+
+   div.first_page_block{
+    height: 185px;
+    padding: 40px 0 0 0;
+ } 
+.iphone_8_block{
+    height: 128px;
+    
+}
+div.second_page_block{
+    height: 300px;
+    padding: 10px 0 0 0;
+}
+.iphone_10_block{
+    width: 100%;
+    height: 225px;
+    bottom: 15px;
+    background: url(images/iphone_x_small.jpg) center bottom no-repeat;
+    background-size:110px;
+}
+.text_wrap{
+    display: block; 
+}
+div.third_page_block{
+    height: 120px;
+}
+div.fourth_page_block{
+    height: 240px;
+}
+div.fourth_page_block div h3{
+    font-family: RajdhaniBold;
+    font-size: 15px;
+    color: white;
+}
+div.fourth_page_block div h3 span{
+    font-size: 25px;
+}
+.content_text h4{
+    font-size: 17px;
+    line-height: 25px;
+}
+.content_text h5{
+    font-size: 10px;
+}
+}
+@media(max-width:240px){
+    h1.iphone_8_text,
+    h2.iphone_10_text,
+    .iphone_colors{
+        font-size: 10px;
+        line-height: 15px;
+   }
+    div.first_page_block{
+        height: 130px;
+        padding: 40px 0 0 0;
+    }
+    .iphone_8_block{
+        height: 90px;
+        background-size:110px 90px; 
+    }
+    div.second_page_block{
+        height: 290px;
+    }
+    .iphone_10_block{
+        height: 225px;
+    }
+    div.fifth_page_block h3{
+        font-size: 17px;
+    }
+    div.sixth_page_block{
+    height: 120px;
+    background-size: cover;
+}
+.content_text h4{
+    font-size: 10px;
+    line-height: 20px;
+}
+.content_text h5{
+    font-size: 7px;
+}
+footer .heading_footer{
+    height: 80px;
+}
+.heading_footer h6{
+    font-size: 15px;
+    padding: 15px 0 0 0;
+}
+.social{
+    bottom: 15px;
+}
+.socials a.link{
+    height: 17px;
+    width: 17px;
+    background-size: 17px;
+} 
+.footer_menu a{
+    font-size: 15px;
+}
+}
+@media (max-width:160px){
+ul.header_menu{
+    width: 68%;
+    left: 100%;
+}
+} 

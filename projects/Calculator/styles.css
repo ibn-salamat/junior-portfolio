@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+input,
+button{
+    border:none;
+    outline: none;
+    transition: 0.2s all ease;
+}
+.container{
+    min-width: 320px;
+    max-width: 440px;
+    margin:  30px auto 0 auto;
+    background:  rgb(44, 42, 42);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.content{
+    width: 100%;
+}
+.screen input{
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+    background: rgb(44, 42, 42);
+    color: white;
+    padding: 50px 5px 5px 5px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 40px;
+    text-align: right;
+}
+
+.grid{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5px;
+}
+.numbers{
+    flex-basis: 74.9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.numbers button{
+    padding: 10px;
+    cursor: pointer;
+    flex-basis: 33.3%;
+    background: #4984b4;
+    color: white;
+    font-size: 20px;
+}
+.numbers button:hover{
+    background: #5d95c4;
+}
+.numbers button:active{
+    background: #226499;
+}
+.operators{
+    flex-basis: 24.9%;
+    display: flex;
+    justify-content: space-between;   
+    flex-direction: column;
+}
+.operators button{
+    padding: 15px;
+    cursor: pointer;
+    flex-basis: 49%;
+    background: #dd6868;
+    color: white;
+    font-size: 30px;
+}
+.operators button:hover{
+    background: #e97b7b;
+}
+.operators button:active{
+    background: #e05454;
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+}
+.other button{
+    flex-basis: 50%;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+#zero{
+    border-bottom-right-radius: 5px;
+}
+#equal{
+    border-bottom-left-radius: 5px;
+}
+#clean,
+#del{
+    background: #bebbbb;
+    
+}
+#clean{
+    flex-basis: 24.9%;
+    border-top-right-radius: 5px;
+}
+#del{
+    flex-basis: 74.9%;
+    border-top-left-radius: 5px;
+}
+#clean:hover,
+#del:hover{
+    background: #8f918f;
+    
+}
+#clean:active,
+#del:active{
+    background: rgb(125, 126, 125);
+    
+}
+
+
+/* */
+p{
+    text-align: center;
+    margin-top: 10px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #bebbbb;
+}

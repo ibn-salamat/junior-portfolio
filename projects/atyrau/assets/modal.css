@@ -1,0 +1,140 @@
+/* Modal */
+.modal-wrap.active{
+    display: flex !important;
+    position: fixed;
+    background: rgba(255,255,255,0.7);
+    z-index: 33;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+.modal-wrap{
+   display: none;
+}
+
+.modal{
+   padding: 30px 40px;
+   background: white;
+   position: relative;
+}
+.modal a{
+   color: #33b4d1;
+}
+button.close-modal{
+   position: absolute;
+   top: 5px; right: 5px;
+   background: none;
+   font-size: 25px;
+}
+
+.modal-header ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   height: 60px;
+   background: #fff;
+}
+.modal-header ul li:last-child{
+   color: rgba(0,0,0,0);;
+}
+
+.modal-header ul li{
+   flex-grow: 1;
+   text-transform:uppercase;
+   font-size: 14px;
+   padding: 10px;
+   border-bottom: 1px solid #ccc;
+   position: relative;
+   color: #333;
+   text-align: center;
+}
+.modal-header ul li.active{
+    color: #00a99d;
+}
+.modal-header ul li.active::before{
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: -1px; left: 0;
+   height: 3px;
+   width: 100%;
+   background: #00a99d;
+}
+
+.tab-links{
+   cursor: pointer;
+}
+
+.reg-modal.active,
+.login-modal.active{
+   display: block;
+}
+
+.reg-modal,
+.login-modal{
+   display: none;
+}
+.reg-modal,
+.login-modal{
+   width: 100%;
+   max-width: 320px;
+}
+.reg-modal h6,
+.login-modal h6{
+   font-weight: 400;
+   font-size: 14px;
+   padding-top: 15px;
+}
+.reg-modal input[type="email"],
+.login-modal input[type="password"],
+.login-modal input[type="email"]{
+   font-size: 14px;
+   padding: 10px;
+   display: block;
+   width: 100%;
+   border:1px solid #00a99d;
+   color: #00a99d;
+   background: white;
+   margin:15px 0;
+}
+
+.reg-modal p{
+   font-size:14px; 
+   margin-top: 15px;
+}
+
+.modal-footer{
+   padding-top: 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.modal-footer button{
+   background: #00a99d;
+   padding: 11px 20px;
+   min-width: 100px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: white;
+   border-radius: 5px;
+}
+.modal-footer > .links p{
+   margin: 0;
+}
+
+@media(max-width:640px){
+    .reg-modal, .login-modal{
+        max-width: 290px;
+        margin: 0 auto;
+    }
+    .modal-header {
+        max-width: 290px;
+        overflow: hidden;
+    }
+    button.close-modal{
+        right: 40px;
+    }
+}

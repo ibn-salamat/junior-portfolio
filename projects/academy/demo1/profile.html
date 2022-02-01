@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Профиль</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="../assets/css/my-main-page.css">
+	<link rel="stylesheet" href="../assets/css/user.css">
+	<link rel="stylesheet" href="../assets/css/modal-no-access.css">	
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+				<a href="index.html" class="logo">
+				<img src="images/academy-logo-white.png" width="125px" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="white">
+				
+				<div class="container-fluid my-header-info">
+				<p class="my-timeleft-word">Тарифтың бітіуне <span class="my-time-left">36</span> күн қалды</p>
+				<ul class="nav my-soc-links">
+					<li><a href=""><i class="fas fa-globe"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href="" ><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="" ><i class="fab fa-telegram-plane"></i></a></li>
+				</ul>
+					<ul class="navbar-nav topbar-nav md-auto align-items-center">
+
+					<div class="user-box my-sm-user-box">
+					<div class="avatar-lg"><img src="images/user-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
+					<div class="u-text">
+						<h4>Hizrian</h4>
+						<p class="text-muted">hello@example.com</p>
+						<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Аккаунт</a>
+						<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Шығу</a>
+					</div>
+					</div>
+
+					<li class="nav-item dropdown hidden-caret my-lg-user-box">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+								<div class="avatar-sm">
+									<img src="images/user-avatar.jpg" alt="..." class="avatar-img rounded-circle">
+								</div>
+							</a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<div class="dropdown-user-scroll scrollbar-outer">
+									<li>
+										<div class="user-box">
+											<div class="avatar-lg"><img src="images/user-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
+											<div class="u-text">
+												<h4>Hizrian</h4>
+												<p class="text-muted">hello@example.com</p>
+												<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Аккаунт</a>
+												<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Шығу</a>
+											</div>
+										</div>
+									</li>
+									<!--
+									<li>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">My Profile</a>
+										<a class="dropdown-item" href="#">Logout</a>
+									</li> -->
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2 my-sidebar-bg">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-primary">
+						<li class="nav-item active">
+							<a class="my-btn-home" href="index.html">
+								<i class="fas fa-home"></i>
+								<p>Басты бет</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Курстар</h4>
+						</li>
+						<li class="nav-item">
+							<a href="#charts" class="modal-no-access-open">
+							<i class="fas fa-briefcase"></i>
+								<p>Мен кәсіпкермін</p>
+							</a>
+						</li>
+					<li class="nav-item">
+							<a href="course-1.html">
+								<i class="fas fa-chart-line"></i>
+								<p>Өз-өзіме маркетолог</p>
+		
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fab fa-themeco"></i>
+								<p>Супер-маркетолог</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fas fa-chess"></i>
+								<p>Жанболаттың <br>методологиясы</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fab fa-jenkins"></i>
+								<p>Инвестор</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fas fa-desktop"></i>
+								<p>Вебинар</p>
+							</a>
+						</li>
+							<li class="nav-item active mt-4">
+							<a class="my-btn-home" href="bachelor-1.html">
+								<i class="fas fa-laptop"></i>
+								<p>Бакалавр</p>
+							</a>
+						</li>
+
+							<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Сервистер</h4>
+
+							<li class="nav-item">
+							<a href="news.html">
+								<i class="far fa-newspaper"></i>
+								<p>Жаңалықтар</p>
+	
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="questions.html">
+								<i class="fas fa-question-circle"></i>
+								<p>Сұрақ-жауап</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="rules.html">
+								<i class="fas fa-pen-square"></i>
+								<p>Ережелер</p>	
+							</a>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header mb-2">
+						<a href="index.html" class="page-title">Басты бет</a>
+						
+						<ul class="breadcrumbs">
+							<li class="nav-home">
+								<a href="index.html">
+									<i class="flaticon-home"></i>
+								</a>
+							</li>
+							<li class="separator">
+								<i class="flaticon-right-arrow"></i>
+							</li>
+							<li class="nav-item">
+								<a href="news.html">Менің аккаунтым</a>
+							</li>
+						</ul>
+					
+					</div>
+
+						<h4 class="mb-4 mt-3">Менің аккаунтым</h4>
+
+
+
+
+					<!--<div class="page-category">Inner page content goes here</div>-->
+					<div class="container-fluid row mx-0 pl-0 pr-0">
+					
+			<div class="profile-wrap">
+                <div class="profile-info">
+                    
+                    <div class="avatar"></div>
+
+                    <h2 class="name">Асылбек Орынгалиев</h2>
+
+                    <table class="main-info">
+                        <tr>
+                            <td class="td-title">Instagram</td>
+                            <td class="td-number">@oke.kz</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Мамандығы</td>
+                            <td class="td-number">Маркетолог</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Жынысы</td>
+                            <td class="td-number">Ер</td>
+                        </tr>
+                    </table>
+
+                  
+                      	<a href="#" class="btn btn-primary btn-round d-block mt-4 mx-auto my-btn">Сабақ оқу</a>
+                    
+                  
+
+                    <button class="open-settings" id="open-modal-form"></button>
+
+                </div>
+
+
+                <div class="other-info">
+
+                    <h3 class="aboutme">Мен туралы</h3>
+
+                    <hr>
+
+                    <p class="description">
+                        Каждый веб-разработчик знает, что такое текст-«рыба». 
+                        Текст этот, несмотря на название, не имеет никакого 
+                        отношения к обитателям водоемов. Используется он 
+                        веб-дизайнерами для вставки на интернет-страницы и 
+                        демонстрации внешнего вида контента, просмотра 
+                        шрифтов, абзацев, отступов и т.д.
+                    </p>
+
+                    <table class="main-info">
+                        <tr>
+                            <td class="td-title">Телефон:</td>
+                            <td class="td-number">87756879530</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Email:</td>
+                            <td class="td-number">examp@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Қаласы:</td>
+                            <td class="td-number">Атырау</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Туған күні:</td>
+                            <td class="td-number">14 сәуір 2000</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+
+                		<div class="zharnama zharnama-1"></div>
+                
+            <!-- Modal form-->
+   <section class='modal-form-wrap'>
+    <div class="modal-form">
+            <form action="">
+                <div class="form-divider">
+            <div class="left">
+            <p class="form-heading mb-0">Email:<span> jako@oke.kz</span></p>
+
+            <label for="form-name"><p>Имя:</p><input type="text" class="form-inputs" id="form-name"></label>
+            <label for="form-surname"><p>Фамилия:</p><input type="text" class="form-inputs" id="form-surname"></label>
+                     <label for="form-phone"><p>Телефон:</p><input type="number" class="form-inputs" id="form-phone"></label>
+            <label for="form-birthday"><p>Дата рождения:</p><input type="date" class="form-inputs" id="form-birthday"></label>
+            <label for="form-gender"><p>Пол:</p>
+                <select name="form-gender" id="form-gender">
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+            </label>
+            <label for="form-file"><p>Аватар:</p><input type="file" class="form-inputs" id="form-file" accept="image/*"></label>
+            </div>
+           
+            <div class="right">
+            <label for="form-textarea" class="label-textarea"><p>О себе:</p><textarea class="form-inputs"></textarea></label>
+            <label for="form-city"><p>Город:</p><input type="text" class="form-inputs" id="form-city"></label>
+   
+            <label for="form-instagram"><p>Instagram:</p><input type="text" class="form-instagram form-inputs" id="form-instagram"></label>
+
+            <label for="form-special"><p>Мамандығы:</p><input type="text" class="form-special form-inputs" id="form-special"></label>
+            
+            <label for="form-password"><p>Пароль:</p><input type="password" class="form-password form-inputs" id="form-password"></label>
+                <button type="submit" id="form-submit">Сохранить изменения</button>
+        </div>
+        </div>
+        </form>
+
+        <button id="close-modal-form">&times;</button>
+
+    </div>
+   </section>
+
+						
+					</div>
+
+
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+						<div class="mx-auto text-center">
+						Zhanbolat Academy. Барлық құқықтар қорғалған. ©2019 жыл. <br>
+						Біздің девиз "Our rewards will always be in exact proportion to our service" - Жанболат
+					</div>				
+				</div>
+			</footer>
+		</div>
+		
+	</div>
+			<div class="modal-no-access-wrap">
+		<div class="modal-no-access">
+			<div class="logo"></div>
+			<p class="mt-4">Қосылу үшін кодты теріңіз</p>
+			<form action="">
+			<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Мысалы: 2850" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn  btn-warning" type="button">Тіркеу</button>
+  </div>
+</div>
+		
+			</form>
+			<button class="modal-no-access-close"><i class="fa fa-times"></i></button>
+			 <a href="">Толығырақ ақпарат алу</a>
+		</div>
+
+	</div>
+
+	<script src="../assets/js/modal-no-access.js"></script>
+	<script src="../assets/js/modal-user.js"></script>
+	<!--   Core JS Files   -->
+	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../assets/js/core/popper.min.js"></script>
+	<script src="../assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="../assets/js/atlantis.js"></script>
+
+
+</body>
+</html>

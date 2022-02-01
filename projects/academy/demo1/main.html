@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Atlantis Lite - Bootstrap 4 Admin Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="../assets/css/my-main-page.css">
+	<link rel="stylesheet" href="../assets/css/modal-no-access.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+				<a href="index.html" class="logo">
+								<img src="images/academy-logo-white.png" width="125px" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="white">
+				
+				<div class="container-fluid my-header-info">
+				<p class="my-timeleft-word">Тарифтың бітіуне <span class="my-time-left">36</span> күн қалды</p>
+
+				<ul class="nav my-soc-links">
+					<li><a href=""><i class="fas fa-globe"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+					<li><a href="" ><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="" ><i class="fab fa-telegram-plane"></i></a></li>
+				</ul>
+					<ul class="navbar-nav topbar-nav md-auto align-items-center">
+
+					<div class="user-box my-sm-user-box">
+					<div class="avatar-lg"><img src="images/user-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
+					<div class="u-text">
+						<h4>Hizrian</h4>
+						<p class="text-muted">hello@example.com</p>
+						<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Аккаунт</a>
+						<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Шығу</a>
+					</div>
+					</div>
+
+					<li class="nav-item dropdown hidden-caret my-lg-user-box">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+								<div class="avatar-sm">
+									<img src="images/user-avatar.jpg" alt="..." class="avatar-img rounded-circle">
+								</div>
+
+							</a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<div class="dropdown-user-scroll scrollbar-outer">
+									<li>
+										<div class="user-box">
+											<div class="avatar-lg"><img src="images/user-avatar.jpg" alt="image profile" class="avatar-img rounded"></div>
+											<div class="u-text">
+												<h4>Hizrian</h4>
+												<p class="text-muted">hello@example.com</p>
+												<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Аккаунт</a>
+												<a href="profile.html" class="btn btn-xs btn-secondary btn-sm">Шығу</a>
+											</div>
+										</div>
+									</li>
+				
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2 my-sidebar-bg">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav nav-primary">
+						<li class="nav-item active">
+							<a class="my-btn-home" href="index.html">
+								<i class="fas fa-home"></i>
+								<p>Басты бет</p>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Курстар</h4>
+						</li>
+						<li class="nav-item">
+							<a href="#charts" class="modal-no-access-open">
+							<i class="fas fa-briefcase"></i>
+								<p>Мен кәсіпкермін</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="course-1.html">
+								<i class="fas fa-chart-line"></i>
+								<p>Өз-өзіме маркетолог</p>
+		
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fab fa-themeco"></i>
+								<p>Супер-маркетолог</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fas fa-chess"></i>
+								<p>Жанболаттың <br>методологиясы</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fab fa-jenkins"></i>
+								<p>Инвестор</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="modal-no-access-open">
+								<i class="fas fa-desktop"></i>
+								<p>Вебинар</p>
+							</a>
+						</li>
+	<li class="nav-item active mt-4">
+							<a class="my-btn-home" href="bachelor-1.html">
+								<i class="fas fa-laptop"></i>
+								<p>Бакалавр</p>
+							</a>
+						</li>
+							<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Сервистер</h4>
+
+							<li class="nav-item">
+							<a href="news.html">
+								<i class="far fa-newspaper"></i>
+								<p>Жаңалықтар</p>
+	
+							</a>
+						</li>
+						<li class="nav-item">
+							<a  href="questions.html">
+								<i class="fas fa-question-circle"></i>
+								<p>Сұрақ-жауап</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="rules.html">
+								<i class="fas fa-pen-square"></i>
+								<p>Ережелер</p>
+					
+							</a>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">Басты бет</h4>
+		
+					</div>
+
+
+
+
+
+					<!--<div class="page-category">Inner page content goes here</div>-->
+					<div class="container-fluid row pr-0  mx-0 px-0">
+					<div class="col-lg-8 pl-0 col-md-12 px-md-0 px-0">
+							<div class="card">
+								<div class="card-header d-flex justify-content-between align-items-center">
+									<h4 class="card-title">Видеоның атауы</h4>
+									<p class="my-0"><i class="far fa-clock" style="color: #1572e8"></i> <span> 8 минут</span></p>
+								</div>
+								<div class="card-body">
+									<div class="tab-content mt-2 mb-3">
+										<div class="tab-pane fade active show">
+									  <iframe width="100%" height="315" src="https://www.youtube.com/embed/XoJBW8U_Lhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 px-0 col-md-12">
+							<div class="container-fluid row h-100 px-0 mx-0">
+								<!--<div class="col-sm-10 col-lg-6 col-md-5 mx-auto">
+									<div class="my-zharnama">
+									</div>
+								</div>-->
+								<div class="col-sm-10 col-lg-12 col-md-5 mx-auto  mt-md-0 mt-2 px-0">
+									<div class="my-zharnama">
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+		
+					<div class="mx-auto text-center">
+						Zhanbolat Academy. Барлық құқықтар қорғалған. ©2019 жыл. <br>
+						Біздің девиз "Our rewards will always be in exact proportion to our service" - Жанболат
+					</div>				
+				</div>
+			</footer>
+		</div>
+		
+	</div>
+
+	<div class="modal-no-access-wrap">
+		<div class="modal-no-access">
+			<div class="logo"></div>
+			<p class="mt-4">Қосылу үшін кодты теріңіз</p>
+			<form action="">
+			<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Мысалы: 2850" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn  btn-warning" type="button">Тіркеу</button>
+  </div>
+
+
+</div>
+		
+			</form>
+			<button class="modal-no-access-close"><i class="fa fa-times"></i></button>
+
+			 <a href="">Толығырақ ақпарат алу</a>
+		</div>
+
+	</div>
+
+	<script src="../assets/js/modal-no-access.js"></script>
+	<!--   Core JS Files   -->
+	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../assets/js/core/popper.min.js"></script>
+	<script src="../assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="../assets/js/atlantis.js"></script>
+</body>
+</html>

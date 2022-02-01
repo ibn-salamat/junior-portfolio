@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <title>Notebook</title>
+  <!-- Icons & Stylesheets -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Include the library in the page -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.2/marked.min.js"></script>
+
+
+  <!-- Notebook app -->
+  <div id="notebook">
+    <!-- Sidebar -->
+    <aside class="side-bar">
+      <!-- Here will be the note list -->
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <!-- Add note button -->
+        <button @click="addNote" :title="addButtonTitle">
+          <i class="material-icons">add</i> Add note</button>
+      </div>
+
+      <div class="notes">
+        <!-- Note list here -->
+        <div class="note" v-for="note of notes" :key='note.id' @click="selectNote(note)"
+          :class="{selected: note === selectedNote}">
+          {{note.title}}</div>
+      </div>
+
+
+    </aside>
+
+    <template v-if="selectedNote">
+      <!-- Main pane -->
+      <section class="main">
+        <div class="toolbar">
+          <input v-model="selectedNote.title" placeholder="Note title" />
+          <button @click="removeNote" title="Remove note"><i class="material-icons">delete</i></button>
+
+
+
+          <!-- Our toolbar is here! -->
+        </div>
+
+        <textarea v-model='selectedNote.content'></textarea>
+        <div class="toolbar status-bar">
+          <!-- The new status bar here! -->
+          <span class="date">
+            <span class="label">Created</span>
+            <span class="value">{{ selectedNote.created | date }}</span>
+          </span>
+
+        </div>
+
+      </section>
+
+
+      <!-- Preview pane -->
+      <aside class="preview" v-html="notePreview"></aside>
+    </template>
+
+
+  </div>
+
+  <!-- Some JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+.my-slide-wrap {
+  height: 480px;
+  overflow: hidden;
+}
+
+.my-slide-wrap .start-slide {
+  margin: 5px 5px;
+  height: 480px;
+  width: 190px;
+  font-size: 31px;
+  color: #fff;
+  position: relative;
+}
+.my-slide-wrap .start-slide span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  vertical-align: top;
+  transform: translateY(-50%);
+  line-height: 40px;
+}
+
+.my-slide {
+  margin: 5px 5px;
+  height: 475px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.my-slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 62px;
+  max-height: 480px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+.my-slide:hover::after {
+  max-height: 0;
+}
+.my-slide .image {
+  width: 210px;
+  height: 100%;
+  box-shadow: 1px 1px 2px rgba(175, 173, 173, 0.85);
+  transition: 0.3s;
+}
+.my-slide .image p.position {
+  position: absolute;
+  font-size: 18px;
+  bottom: 50px;
+  left: 50%;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  transform: translateX(-50%);
+  width: max-content;
+}
+.my-slide p.name {
+  background: #4557f9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 100;
+}
+.my-slide:hover p.name {
+  color: #4557f9;
+  background: #fff;
+}
+
+/* Active slide */
+.my-slide .image .description {
+  position: absolute;
+  opacity: 0;
+  left: -20px;
+  transition: 0.3s;
+  bottom: 0;
+  top: 0;
+  padding: 20px 15px;
+  background: rgba(255, 255, 255, 0.85);
+}
+.my-slide .close-slide {
+  display: none;
+}
+
+.my-slide.active .image {
+  width: 420px;
+}
+
+.my-slide .image .full {
+  display: none;
+}
+.my-slide .image .mini {
+  object-fit: cover;
+  height: 100%;
+}
+.my-slide.active .image .mini {
+  display: none;
+}
+.my-slide.active .image .full {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+.my-slide.active::after {
+  opacity: 0;
+}
+.my-slide.active .image p.position,
+.my-slide.active p.name {
+  opacity: 0;
+}
+.my-slide.active .image .description {
+  left: 0;
+  width: 62%;
+  opacity: 1;
+}
+.my-slide .image .description p {
+  font-size: 13px;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.my-slide .image .description h4 {
+  color: #4557f9;
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.my-slide .image .description h4 span {
+  font-size: 14px;
+  vertical-align: super;
+  text-transform: uppercase;
+}
+.my-slide .image .description h5 {
+  color: rgb(102, 100, 100);
+  font-size: 14px;
+  margin: 7px 0 0 0;
+  text-transform: uppercase;
+}
+.my-slide.active .close-slide {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: 0.1s;
+  height: 0;
+}
+.my-slide.active .close-slide:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover {
+  color: #fff;
+  background: #4557f9;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #4557f9;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 2px rgba(37, 37, 37, 0.3);
+  transition: 0.3s all ease;
+}
+.owl-carousel .owl-nav button.owl-next:active,
+.owl-carousel .owl-nav button.owl-prev:active {
+  background: #2a3de6;
+  transition: 0.1s;
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: 10px;
+}
+.owl-carousel .owl-nav button span {
+  font-size: 38px;
+  /* line-height: 0; */
+  margin-bottom: 15px;
+}
+.owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -3px;
+}
+.owl-carousel .owl-nav button.owl-next span {
+  margin-left: 3px;
+}

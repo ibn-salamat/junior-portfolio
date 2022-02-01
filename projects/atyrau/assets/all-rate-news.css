@@ -1,0 +1,218 @@
+.content-wrap{
+    background: #f2f2f2;
+}
+.content{
+    max-width: 930px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+article {
+    margin: 25px 0;
+}
+h1{
+    color: #414e56;
+}
+.goal{
+    color: #ffae47;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    /*font-family: 'Gotham Medium';*/
+}
+.yourRate{
+    margin: 0 -10px 0 10px;
+}
+.articles:first-child article{
+    margin-top: 10px;
+}
+.articles{
+    padding: 0 15px 0 0;
+}
+article h3 a{
+    color: #00907f;
+}
+article h3 a:hover{
+    text-decoration: underline;
+}
+article .description{
+    /*font-family: 'Gotham Medium';*/
+}
+
+button.show-more{
+    color: #fff;
+    background: #ffae47;
+    padding: 7px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   /* font-family: 'Gotham Medium';*/
+    font-size: 18px;
+}
+button.show-more:hover{
+    background: #ec9624;
+}
+
+
+/* Ads */
+.ads .ad.ad-1{
+    background: url(../images/ad-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.ads .ad.ad-2{
+    background: url(../images/ad-2.jpg) no-repeat center;
+    background-size: cover;
+}
+.ads .ad{
+    width: 290px;
+    height: 400px;
+    background: #ffae47;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.ads a{
+    display: block;
+    background: transparent;;
+}
+.ads a:nth-child(even){
+    margin-top: 20px;
+}
+/* star */
+#ratingsForm{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+  form p{
+    color: rgb(175, 174, 174);
+    padding: 5px 0;
+  }
+  form .stars {
+    background: url("../images/stars.png") repeat-x 0 0;
+    width: 150px;
+}
+  form .stars input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  form .stars input[type="radio"].star-5:checked ~ span { width: 100%; }
+  
+  form .stars input[type="radio"].star-4:checked ~ span { width: 80%; }
+  
+  form .stars input[type="radio"].star-3:checked ~ span { width: 60%; }
+  
+  form .stars input[type="radio"].star-2:checked ~ span { width: 40%; }
+  
+  form .stars input[type="radio"].star-1:checked ~ span { width: 20%; }
+  
+  form .stars label {
+    pointer-events: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0!important;
+    padding: 0!important;
+    text-indent: -999em;
+    float: left;
+    position: relative;
+    z-index: 10;
+    background: transparent!important;
+    cursor: pointer;
+  }
+  
+
+  
+  form .stars span {
+    display: block;
+    width: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: url("../images/stars.png") repeat-x 0 -60px;
+    -webkit-transition: -webkit-width 0.5s;
+    -moz-transition: -moz-width 0.5s;
+    -ms-transition: -ms-width 0.5s;
+    -o-transition: -o-width 0.5s;
+    transition: width 0.5s;
+  }
+  
+
+
+
+  /* Media */
+  
+  
+
+  @media(max-width:960px){
+      .content{
+        padding: 35px 20px;
+      }
+  }
+
+  @media(max-width:768px){
+    .content{
+      padding: 35px 20px;
+      flex-direction: column;
+    }
+    .ads{
+        margin-top: 25px;
+    }
+    .ads .ad{
+        margin: 0 auto;
+    }
+    .stats{
+        margin: 5px 0;
+    }
+    .articles{
+        padding: 0;
+    }
+}
+
+@media(max-width:480px){
+    .content{
+        padding: 35px 10px;
+    }
+    .articles{
+        text-align: center; 
+    }
+    .stats{
+        justify-content: center;
+    }
+    .yourRate,
+    .goal{
+        font-size: 14px;
+    }
+    button.show-more{
+        display: block;
+        margin: 0 auto;
+    }
+}
+  /* fonts */
+
+@font-face{
+    font-family: 'Gotham Medium';
+    src: url(fonts/gotham-medium.ttf)
+  }
+  
+  @font-face{
+    font-family: 'Gotham Book';
+    src: url(fonts/gotham-book.otf)
+  }
+  
+  @font-face {
+    font-family: 'Gotham Bold';
+    src: url(fonts/gotham-bold.otf);
+  }

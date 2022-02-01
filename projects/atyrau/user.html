@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пользователь</title>
+
+    <!-- font -->
+    <link href="assets/header&footer.css" rel="stylesheet">
+    <link href="assets/modal.css" rel="stylesheet">
+    <link href="assets/basic.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/user.css">
+    
+</head>
+
+<body>
+  
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-sites">
+                    <div class="sites">
+                        <ul class="sites-list">
+                            <li class="sites-site"><a href="index.html" class="sites-link sites-link-0">Главная</a></li>
+                            <li class="sites-site"><a href="all-share-news.html" class="sites-link sites-link-1">Новости</a></li>
+                            <li class="sites-site"><a href="all-vote-news.html" class="sites-link sites-link-4">Голосования</a></li>
+                            <li class="sites-site"><a href="all-rate-news.html" class="sites-link sites-link-3">Городские новинки</a></li>
+                            <!--<li class="sites-site"><a href="#" class="sites-link sites-link-4"></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-buttons">
+                    <div class="city">
+                        <a href="" class="city-link">Атырау</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+                    </div>
+                    <div class="login lang" style="margin-left: 25px;">
+                        <select name="" class="lang-select" id="">
+                            <option value="">Русский</option>
+                            <option value="">Қазақша</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="header-links">
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item"><a href="" class="links-link" title="">Афиша</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Проект в лицах</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Результаты работы</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Акции</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-phone">
+                    <div class="phone">
+                        <a href="" class="phone-link">900</a>
+                        <p class="phone-text">По Казахстану бесплатно</p>
+                    </div>
+
+                </div>
+                <a class="header-toggle js-toggle-menu" href="#menu">Показать меню</a>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="popup popup-menu">
+        <div class="popup-container">
+            <a href="#" class="popup-close"></a>
+            <div class="city">
+                <a href="" class="city-link">Атырау</a>
+            </div>
+            <div class="login">
+                <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Афиша</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Проект в лицах</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Результаты работы</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Акции</a></li>
+                </ul>
+            </nav>
+
+           <!-- <div class="links">
+                <ul class="links-list">
+                    <li class="links-item"><a href="" class="links-link" title="">Голосования</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Городские новинки</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Новости проекта</a></li>
+                </ul>
+            </div>-->
+
+            <div class="sites">
+
+
+                <ul class="sites-list">
+                    <li class="sites-site"><a href="index.html" class="sites-link site-0">Главная</a></li>
+                    <li class="sites-site"><a href="all-share-news.html" class="sites-link site-1">Новости</a></li>
+                    <li class="sites-site"><a href="all-vote-news.html" class="sites-link site-3">Голосования</a></li>
+                    <li class="sites-site"><a href="all-rate-news.html" class="sites-link site-2">Городские новинки</a></li>
+                  <!--<li class="sites-site"><a href="#" class="sites-link site-4">Онлайн Маркет</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="modal-wrap">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <ul>
+                    <li class="tab-links log-tab" onclick="activeTab(this)">Авторизация</li>
+                    <li class="tab-links reg-tab" onclick="activeTab(this)">Регистрация</li>
+                    <li>Default</li>
+                </ul>
+                <button class="close-modal">&#10006;</button>
+
+            </div>
+
+            <div class="login-modal">
+
+                <h6>Введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+                <input type="password" placeholder="Пароль">
+
+                <p> <input type="checkbox"> Я согласен с условиями <a href="#">оферты</a></p>
+                <p> <input type="checkbox"> Запомнить меня на этом устройстве</p>
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+
+
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получить помощь</a></p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="reg-modal">
+
+                <h6>Для регистрации в системе
+                    введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+
+
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получить помощь</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+
+    <!-- Content -->
+    <section class="content-wrap" id="content">
+        <div class="content">
+
+            <div class="profile-wrap">
+                <div class="profile-info">
+                    
+                    <div class="avatar"></div>
+
+                    <h2 class="name">Асылбек Орынгалиев</h2>
+
+                    <table class="main-info">
+                        <tr>
+                            <td class="td-title">Голосования</td>
+                            <td class="td-number">50</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Баллы</td>
+                            <td class="td-number">500</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Остальные баллы</td>
+                            <td class="td-number">100</td>
+                        </tr>
+                    </table>
+
+                    <div class="buttons"> 
+                        <button class="tovote">Голосовать</button>
+                        <button class="like">Оценить</button>
+                    </div>
+
+                    <button class="open-settings" id="open-modal-form"></button>
+
+                </div>
+
+
+                <div class="other-info">
+
+                    <h3 class="aboutme">Обо мне</h3>
+
+                    <hr>
+
+                    <p class="description">
+                        Каждый веб-разработчик знает, что такое текст-«рыба». 
+                        Текст этот, несмотря на название, не имеет никакого 
+                        отношения к обитателям водоемов. Используется он 
+                        веб-дизайнерами для вставки на интернет-страницы и 
+                        демонстрации внешнего вида контента, просмотра 
+                        шрифтов, абзацев, отступов и т.д.
+                    </p>
+
+                    <table class="main-info">
+                        <tr>
+                            <td class="td-title">Телефон:</td>
+                            <td class="td-number">87756879530</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Email:</td>
+                            <td class="td-number">examp@mail.ru</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Город:</td>
+                            <td class="td-number">Атырау</td>
+                        </tr>
+                        <tr>
+                            <td class="td-title">Дата рождения:</td>
+                            <td class="td-number">2000 14 04</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <a href="#" class="ad-lg"><div class="ad ad-lg"></div></a>
+                <a href="#" class="ad-lg"><div class="ad ad-lg"></div></a>
+
+                
+            </div>
+         
+
+            <div class="search-sm search-block">
+                <p class="title">Билеты и купоны</p>
+                <div style="width:15px;height:10px;"> </div>
+                <input type="search" placeholder="поиск">
+            </div>
+
+
+            <div class="awards-wrap">
+                <div class="search-lg search-block">
+                    <p class="title">Билеты и купоны</p>
+                    <div style="width:15px;height:10px;"> </div>
+                    <input type="search" placeholder="поиск">
+                </div>
+
+                
+                <div class="awards">
+
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная  стрижка.
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная  стрижка.
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная  стрижка.
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная  стрижка.
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная стрижка.
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket">
+                        <img src="images/ticket-poster.jpg" alt="" class="poster">
+
+                        <div class="right">
+                            <p class="description">
+                                Barbershop Clippers – это 
+                                сугубо мужская территория, 
+                                непринужденная обстановка, 
+                                качественная и стильная стрижка
+                                
+                            </p>
+
+                            <div class="buttons">
+                                <p class="num-goal">50 балл</p>
+                                <button class="buy">купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-wrap">
+                    <div class="pagination">
+                            <a href="#">1</a>
+                            <a class="active" href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                    </div>
+                </div>
+                </div>                              
+            </div>
+
+
+
+            <div class="ad-sm-wrap">
+            <a href="#" class="ad-sm"><div class="ad ad-sm"></div></a>
+            <a href="#" class="ad-sm"><div class="ad ad-sm"></div></a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+<!-- Modal form-->
+   <section class='modal-form-wrap'>
+    <div class="modal-form">
+            <form action="">
+                <div class="form-divider">
+            <div class="left">
+            <p class="form-heading">Email:<span> jako@oke.kz</span></p>
+            <label for="form-password"><p>Пароль:</p><input type="password" class="form-password form-inputs" id="form-password"></label>
+            <label for="form-name"><p>Имя:</p><input type="text" class="form-inputs" id="form-name"></label>
+            <label for="form-surname"><p>Фамилия:</p><input type="text" class="form-inputs" id="form-surname"></label>
+            <label for="form-birthday"><p>Дата рождения:</p><input type="date" class="form-inputs" id="form-birthday"></label>
+            <label for="form-gender"><p>Пол:</p>
+                <select name="form-gender" id="form-gender">
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select>
+            </label>
+            <label for="form-file"><p>Аватар:</p><input type="file" class="form-inputs" id="form-file" accept="image/*"></label>
+            </div>
+           
+            <div class="right">
+            <label for="form-textarea" class="label-textarea"><p>О себе:</p><textarea class="form-inputs"></textarea></label>
+            <label for="form-city"><p>Город:</p><input type="text" class="form-inputs" id="form-city"></label>
+            <label for="form-phone"><p>Телефон:</p><input type="number" class="form-inputs" id="form-phone"></label>
+                <button type="submit" id="form-submit">Сохранить изменения</button>
+        </div>
+        </div>
+        </form>
+
+        <button id="close-modal-form">&times;</button>
+
+    </div>
+   </section>
+
+
+    <!-- Footer -->
+    <section class="prefooter-wrap">
+        <div class="prefooter">
+            <h5>Узнай результаты <br>
+                и подпишись на новости</h5>
+
+            <div class="soc-networks">
+                <a href="#" class="fb" target="_blank"></a>
+                <a href="#" class="tw" target="_blank"></a>
+                <a href="#" class="vk" target="_blank"></a>
+                <a href="#" class="ok" target="_blank"></a>
+                <a href="#" class="yt" target="_blank"></a>
+                <a href="#" class="ig" target="_blank"></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+
+            <ul class="menu">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Годовой отчет</a></li>
+            </ul>
+            <div class="other">
+                <p>Белсенді Атырау © 2019, Все права защищены.</p>
+                <p>Разработано в <a style="text-decoration:underline"  target="_blank" href="http://okegroup.kz/">Oke Company</a></p>
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+        // Menu active
+        let activePopup = document.querySelector('.js-toggle-menu');
+        let popupMenu = document.querySelector('.popup.popup-menu')
+
+        activePopup.addEventListener('click', () => {
+            popupMenu.classList.add('is-visible');
+        })
+
+        // Menu inactive
+        let inactivePopup = document.querySelector('.popup-close');
+        inactivePopup.addEventListener('click', () => {
+            popupMenu.classList.remove('is-visible');
+        })
+    </script>
+
+    
+    <script>
+        // Modal user settings
+        let btnOpenUserSettings = document.getElementById('open-modal-form');
+        let userSettings = document.querySelector('.modal-form-wrap');
+        let btnCloseUserSettings = document.getElementById('close-modal-form');
+
+        let content = document.getElementById('content');
+        
+        btnOpenUserSettings.addEventListener('click', function(){
+            userSettings.classList.add('active');
+            document.body.classList.add('overflowHidden');
+
+
+        })
+
+        btnCloseUserSettings.addEventListener('click', function(){
+            userSettings.classList.remove('active');
+            document.body.classList.remove('overflowHidden');
+        })
+
+    </script>
+
+    <script src="assets/modal.js"></script>
+
+    
+</body>
+</html>

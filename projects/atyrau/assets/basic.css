@@ -1,0 +1,69 @@
+ /* Basic */
+ html,
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: "Open Sans", sans-serif;
+     min-width:320px;
+ }
+
+ *,
+ *::after,
+ *::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ ul {
+     list-style: none;
+ }
+ 
+
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ button,
+ input,
+ select,
+ option {
+     border: none;
+     outline: none;
+ }
+
+ button {
+     cursor: pointer;
+ }
+
+
+/* Footer */
+/* > 992px */
+@media( max-width:992px){
+
+
+}/* end > 992px */
+
+/* < 992px */
+@media( max-width:992px){
+
+
+}/* end < 992px */
+
+/* < 768px */
+@media(max-width:768px){
+    
+ 
+
+
+}/* end < 768px */  
+
+/* < 640px */
+@media(max-width:640px){
+
+
+} /* end < 640px */
+
+
+

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="pfB6dF1JK8nXOSe3x1-2uJ_PZStJ11tnJRET_oyE3e4" />
+    <meta name="keywords" content="Разработка сайтов, Frontend разработчик, Javascript, ReactJS" />
+    <meta name="yandex-verification" content="61f7434360a49d15" />
+    <title>NURLYKHAN</title>
+    <meta name="description" content="Я Frontend Разработчик с Казахстана." />
+    <link rel="stylesheet" href="assets/basic.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+    <section class="first">
+
+        <header class="main-header">
+
+            <h1 class="logo"><a href="index.html" title="Главная страница">NURLYKHAN</a></h1>
+
+            <nav class="main-nav">
+                <ul class="header-menu">
+                    <li><a class="menu-link" href="projects.html" title="Мои проекты">Проекты</a></li>
+                    <li><a class="menu-link" href="about.html" title="Обо мне">Обо мне</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="first-content">
+
+            <h1>Я Fullstack <br class="text-wrap">
+                <!--MERN Stack-->
+                разработчик.
+            </h1>
+
+            <p>Если у вас есть вопросы или предложения<br class="text-wrap"> вы можете
+                <a href="#" role="button" class="links activeFeedback">связатся со мной.</a>
+            </p>
+            <p>update is coming soon</p>
+
+        </div>
+    </section>
+
+
+    <!-- Feedback modal -->
+    <div class="modal-wrap feedback">
+        <div class="feedback-modal">
+            <header>
+                <button class="toggle-menu active form-close" id="close-modal">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+            <div class="content">
+                <h2>Напиши мне что-нибудь</h2>
+                <form class="feedback-form" method="POST" action="https://formspree.io/n.salamatoff@gmail.com">
+                    <input type="email" name="email" placeholder="Ваш email адрес">
+                    <textarea name="message" id="" rows="7" placeholder="Ваш текст"></textarea>
+                    <button type="submit" id="submit-feedback-form">Отправить</button>
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Feedback modal -->
+    <script>
+        document.getElementById('submit-feedback-form').addEventListener('click', () => {
+            console.log('not ready');
+        })
+
+        let closeModalFeedback = document.getElementById("close-modal");
+        let activeModalFeedback = document.querySelector('a.activeFeedback')
+
+        let feedbackModal = document.querySelector('.modal-wrap.feedback');
+
+        activeModalFeedback.addEventListener('click', () => {
+            feedbackModal.classList.add('active');
+            document.body.style.overflowY = 'hidden';
+        })
+
+        closeModalFeedback.addEventListener('click', () => {
+            feedbackModal.classList.remove('active');
+            document.body.style.overflowY = 'scroll';
+        })
+    </script>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer">
+
+            <p id="sm">n.salamatoff@gmail.com</p>
+
+            <div class="socials">
+                <a href="https://vk.com/ibn_salamat" target="blank_" class="vk">Vk</a>
+                <a href="https://github.com/ibn-salamat" target="blank_" class="github">Github</a>
+                <a href="https://instagram.com/ibn_salamat" target="blank_" class="instagram">Instagram</a>
+            </div>
+
+            <p id="lg">designed by NURLYKHAN</p>
+
+        </div>
+        <!-- 23.02.2019-->
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>

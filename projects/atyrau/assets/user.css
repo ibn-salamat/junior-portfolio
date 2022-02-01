@@ -1,0 +1,554 @@
+body{
+  position: relative;
+}
+
+
+section.content-wrap{
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.content{
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.profile-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+.profile-info,
+.other-info{
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 17px rgb(138, 136, 136);
+  position: relative;
+}
+.profile-info{
+  padding: 10px 30px 25px 30px;
+  font-family: 'Gotham Medium';
+}
+
+.profile-info .open-settings{
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: url(../images/settings-icon.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  opacity: 0.8;
+}
+.profile-info .open-settings:hover{
+  opacity: 1;
+}
+
+
+.avatar{
+  width: 115px;
+  height: 115px;
+  background: url(../images/profile-avatar.png) no-repeat center;
+  background-size: contain;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid #bababa;
+}
+
+.name{
+  text-align: center;
+  color: #006458;
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 100;
+}
+
+.other-info{
+  margin-top: 30px;
+}
+.awards-wrap{
+  width: 100%;
+  max-width: 610px;
+}
+
+table.main-info{
+  width: 100%;
+  margin-top: 30px;
+}
+table.main-info tr{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 2px solid #eaeaea;
+}
+table.main-info tr:first-child{
+  border-top: 2px solid #eaeaea;
+}
+
+.main-info td.td-title{
+  color: #505c63;
+  font-size: 14px;
+}
+.main-info td.td-number{
+  color: #008f7f;
+}
+
+.profile-info .buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.profile-info .buttons button{
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: white;
+  font-family: 'Gotham Medium';
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.profile-info .buttons .tovote{
+  background: #ee4e94;
+}
+.profile-info .buttons .tovote:hover{
+  background: #b61f61;
+}
+.profile-info .buttons .like{
+  background: #ff632c;
+}
+.profile-info .buttons .like:hover{
+  background: #d34512;
+}
+
+
+.other-info{
+  font-family: 'Gotham Medium';
+  padding: 25px 0 0 0;
+}
+
+.other-info h3.aboutme{
+  color: #3f4b54;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0 0 21px 30px;
+}
+
+.other-info hr{
+  background: #e5e5e5;
+  height: 2px;;
+  border: none;
+}
+.other-info p.description{
+  color: #3f4b54;
+  font-size: 12px;
+  padding: 20px 30px;
+  line-height: 20px;
+  line-clamp: 20px;
+  font-weight: 100;
+}
+
+.other-info table.main-info{
+  padding: 0 30px;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+.other-info table.main-info tr:last-child{
+  border-bottom: none;
+}
+
+div.search-sm{
+  display: none;
+}
+div.search-lg.search-block{
+  margin-top: 0;
+}
+.search-block{
+  width: 100%;
+  background: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+
+}
+.search-block .title{
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: white;
+  font-family: 'Gotham Medium';
+  text-transform: uppercase;
+  font-size: 10px;
+  background: #ee4e94;
+  min-width: 150px;
+}
+.search-block input{
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  padding: 6.5px 20px;
+  border-radius: 20px;
+}
+
+
+/* Ad */
+.ad{
+  height: 340px;
+  width: 320px;
+  margin-top: 30px;
+}
+.ad-sm-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ad.ad-sm{
+  width: 290px;
+}
+
+
+
+/* Awards */
+.awards{
+  width: 100%;
+  background: white;
+  margin-top: 30px;
+  padding: 0.1px 20px 30px 20px;
+  margin-bottom: 30px;
+}
+.search-block input{
+  background: url(../images/search-icon.png) no-repeat 10px center;
+  background-size: 17px 17px;
+  padding-left: 32px;
+}
+
+/* Ticket */
+.ticket{
+  width: 100%;
+  margin: 40px 0;
+  overflow: auto;
+  display: flex;
+}
+.ticket .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ticket p.description{
+  font-family: 'Gotham Book';
+}
+.ticket img{
+  float: left;
+  width: 60%;
+  margin: 0 15px 0 0;
+}
+.ticket .description{
+  font-family: 'Gotham Book';
+}
+
+.buttons p,
+.buttons button.buy{
+  padding: 7px 15px;
+  display: inline-block;
+  font-family: 'Gotham Book';
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 100;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.ticket .num-goal{
+  background: #00907f;
+}
+.ticket button.buy{
+  background: #ee4e94;
+}
+
+.ticket button.buy:hover{
+  background: #b61f61;
+}
+.ad-sm{
+  display: none;
+}
+.ad.ad-lg,
+.ad.ad-sm{
+  background:url(../images/ad-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+/* Modal form */
+.modal-form-wrap.active{
+  display: flex;
+}
+.modal-form-wrap{
+  position: fixed;
+  top: 0;
+  bottom: -50px;
+  z-index: 17;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  padding-top: 80px;
+}
+.modal-form{
+  width: 90%;
+  height: 90%;
+  max-width: 1000px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  padding-top: 50px;
+  max-height: 560px;
+  position: relative;
+}
+.form-heading{
+  font-weight: bold;
+}
+.form-heading span{
+  font-weight: 100;
+}
+.form-inputs,
+#form-gender{
+  border: 1px solid #3333;
+  padding: 5px 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+textarea.form-inputs{
+  height: 100px;  ;
+}
+.modal-form label p{
+  padding: 5px 5px;
+  padding-left: 0;
+  margin-top: 5px;
+}
+.modal-form form{
+  width: 100%;
+}
+.form-divider{
+  display: flex;
+  justify-content: space-around;
+}
+label.label-textarea{
+  display: block;
+  margin-top: 23px;
+}
+.form-divider .left,
+.form-divider .right{
+  width: 50%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+button#form-submit {
+  padding: 10px 20px;
+  margin-top: 30px;
+  background: #1771e7fb;
+  color: white;
+  border-radius: 20px;
+  align-self: flex-end;
+}
+button#form-submit:hover{
+  background: #0858c2fb;
+}
+#close-modal-form{
+  position: absolute;
+  font-size: 50px;
+  background: none;
+  right: 20px;
+  top: 0px;
+  color: #333;
+}
+body.overflowHidden{
+  overflow: hidden;
+}
+
+/* pagination */
+.pagination-wrap{
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #3f4b54;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: 'Gotham Book';
+  font-weight:bold;
+}
+
+.pagination a.active {
+  color: #00907f;
+}
+
+.pagination a:hover:not(.active) {color: #00907f;}
+
+/* media */
+/* > 960px */
+@media(min-width:960px){
+
+}
+/* < 960px */
+@media(max-width: 960px){
+  .content{
+    flex-direction: column;
+    padding: 30px;
+  }
+  .profile-wrap{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 17px rgb(138, 136, 136);
+  }
+  .other-info{
+    margin: 0;
+  }
+  .profile-info,
+  .other-info{
+    box-shadow: none;
+    height: 500px;;
+  }
+  .profile-info{
+    border-right: 2px solid #e5e5e5;
+  }
+  table.main-info tr{
+    padding: 10px 10px;
+  }
+  div.search-sm{
+    display: flex;
+  }
+  div.search-lg{
+    display: none;
+  }
+  .awards-wrap{
+    max-width: 100%;
+  }
+  .ad-lg{
+    display: none;
+  }
+  .ad-sm{
+    display: block;
+    margin: 0;
+  }
+}
+
+/* < 720 */
+@media(max-width:720px){
+  .ad-sm-wrap{
+    flex-direction: column;
+  }
+  a:last-child .ad.ad-sm{
+    margin-top: 30px;
+  }
+}
+
+/* < 640px */
+@media(max-width:640px){
+  .profile-wrap{
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .profile-info{
+    border-right: none;
+    height: auto;
+}
+.other-info{
+  height: auto;
+  margin-top: 30px;
+}
+.profile-info,
+.other-info{
+  box-shadow: 0px 0px 17px rgb(138, 136, 136);
+}
+
+.ticket{
+  flex-direction: column;
+}
+.ticket img{
+  float: none;
+  width: 100%;
+  margin:0 0 15px 0;
+}
+.ticket .buttons{
+  margin-top: 15px;
+}
+
+.form-divider{
+  flex-direction: column;
+  align-items: center;
+}
+.form-divider .left, .form-divider .right{
+  width: 100%;
+}
+.form-divider .right{
+  padding-bottom: 20px;
+}
+
+.modal-form-wrap{
+  padding-top: 20px;
+}
+.modal-form{
+  padding-top: 20px;
+  max-height: 820px;
+  position: absolute;
+  overflow-y: scroll;
+}
+.form-inputs, #form-gender{
+  margin-top: 3px;
+}
+}
+
+/* < 480px */
+@media(max-width:480px){
+  .content{
+    padding: 30px 15px;
+  }
+  .profile-info{
+    padding: 10px 15px 25px 15px;
+  }
+  .other-info table.main-info{
+    padding: 0 15px;
+  }
+  .search-block{
+    flex-direction: column;
+  }
+}
+
+
+@font-face{
+  font-family: 'Gotham Medium';
+  src: url(fonts/gotham-medium.otf)
+}
+
+@font-face{
+  font-family: 'Gotham Book';
+  src: url(fonts/gotham-book.otf)
+}

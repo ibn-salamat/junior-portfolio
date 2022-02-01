@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Белсенді Атырау</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/rate-news.css">
+    <link rel="stylesheet" href="assets/basic.css">
+    <link rel="stylesheet" href="assets/header&footer.css">
+    <link rel="stylesheet" href="assets/modal.css">
+</head>
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-sites">
+                    <div class="sites">
+                        <ul class="sites-list">
+                            <li class="sites-site"><a href="index.html" class="sites-link sites-link-0">Главная</a></li>
+                            <li class="sites-site"><a href="all-share-news.html" class="sites-link sites-link-1">Новости</a></li>
+                            <li class="sites-site"><a href="all-vote-news.html" class="sites-link sites-link-4">Голосования</a></li>
+                            <li class="sites-site"><a href="all-rate-news.html" class="sites-link sites-link-3">Городские новинки</a></li>
+                            <!--<li class="sites-site"><a href="#" class="sites-link sites-link-4"></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-buttons">
+                    <div class="city">
+                        <a href="" class="city-link">Атырау</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+                    </div>
+                    <div class="login lang" style="margin-left: 25px;">
+                        <select name="" class="lang-select" id="">
+                            <option value="">Русский</option>
+                            <option value="">Қазақша</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="header-links">
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item"><a href="" class="links-link" title="">Афиша</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Проект в лицах</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Результаты работы</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Акции</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-phone">
+                    <div class="phone">
+                        <a href="" class="phone-link">900</a>
+                        <p class="phone-text">По Казахстану бесплатно</p>
+                    </div>
+
+                </div>
+                <a class="header-toggle js-toggle-menu" href="#menu">Показать меню</a>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="popup popup-menu">
+        <div class="popup-container">
+            <a href="#" class="popup-close"></a>
+            <div class="city">
+                <a href="" class="city-link">Атырау</a>
+            </div>
+            <div class="login">
+                <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Афиша</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Проект в лицах</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Результаты работы</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Акции</a></li>
+                </ul>
+            </nav>
+
+           <!-- <div class="links">
+                <ul class="links-list">
+                    <li class="links-item"><a href="" class="links-link" title="">Голосования</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Городские новинки</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Новости проекта</a></li>
+                </ul>
+            </div>-->
+
+            <div class="sites">
+
+
+                <ul class="sites-list">
+                    <li class="sites-site"><a href="index.html" class="sites-link site-0">Главная</a></li>
+                    <li class="sites-site"><a href="all-share-news.html" class="sites-link site-1">Новости</a></li>
+                    <li class="sites-site"><a href="all-vote-news.html" class="sites-link site-3">Голосования</a></li>
+                    <li class="sites-site"><a href="all-rate-news.html" class="sites-link site-2">Городские новинки</a></li>
+                  <!--<li class="sites-site"><a href="#" class="sites-link site-4">Онлайн Маркет</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+   <!-- Content -->
+   <section class="content-wrap">
+       <div class="first">
+         <div class="article-content">
+        
+            <h1 class="article-title-heading">Музеи начнут работать бесплатно каждую неделью месяца.</h1>
+
+            <article class="main">
+                <div class="left">
+                    <img src="images/article-promo.jpg" alt="">
+                    <div class="buttons">
+                        <div id="for-fix-sm">
+                        <p class="goal">+3 балла</p>
+                        <button class="tovote" id="torate" disabled>Оценить</button>
+                        </div>
+                        <form id="ratingsForm">
+                                <div class="stars">
+                                  <input type="radio" name="star" class="star-1" id="star-1">
+                                  <label class="star-1" for="star-1">1</label>
+                                  <input type="radio" name="star" class="star-2" id="star-2">
+                                  <label class="star-2" for="star-2">2</label>
+                                  <input type="radio" name="star" class="star-3" id="star-3">
+                                  <label class="star-3" for="star-3">3</label>
+                                  <input type="radio" name="star" class="star-4" id="star-4">
+                                  <label class="star-4" for="star-4">4</label>
+                                  <input type="radio" name="star" class="star-5" id="star-5">
+                                  <label class="star-5" for="star-5">5</label>
+                                  <span></span>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="article-text">  Музеи и выставочные залы,
+                         подведомственные столичному Департаменту культуры, будут работать 
+                         бесплатно каждую третью неделю месяца. При этом у каждого музея будет
+                          свой «свободный день». Например, Московский музей современного искусства 
+                          можно будет бесплатно посетить во вторник, в четверг посмотреть
+                         экспозиции Дарвиновского музея, а в воскресенье выставочные залы Манежа.</p>
+                </div>
+            </article>
+       </div>
+
+
+            <div class="more-details">
+                <div class="more-blocks">
+                        <div>
+                    <div class="block">
+                        <img src="images/vote-picture.jpg" alt="">
+                    </div>
+                    <div class="block">
+                            <img src="images/vote-picture.jpg" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                        <div class="block all-photo" >
+                                <img src="images/vote-picture2.jpg" alt="">
+                                <p><a href="#">Все фотографии</a></p>
+                        </div>
+                    <div class="block rate-stat" >
+                         <ul>
+                             <li><p>1<span class="star-in-list"></span><span class="fix-number-to-center">556<span?</p></li>
+                             <li><p>2<span class="star-in-list"></span><span class="fix-number-to-center">65</span></p></li>
+                             <li><p>3<span class="star-in-list"></span><span class="fix-number-to-center">57</span></p></li>
+                             <li><p>4<span class="star-in-list"></span><span class="fix-number-to-center">54</span></p></li>
+                             <li><p>5<span class="star-in-list"></span><span class="fix-number-to-center">52</span></p></li>
+                         </ul>
+                         <div class="total-goal">
+                             <p class="number">4.56</p>
+                             <p class="word">общая оценка</p>
+                         </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="share-wrap">
+
+                <div class="right">
+                    <div class="avatar"></div>
+                    <input type="text" class="your-comment">
+                    <button class="send-comment"></button>
+                </div>
+            </div> 
+       </div>
+
+
+       <div class="second">
+        <h1>Другие городские новинки</h1>
+
+        <div class="blocks votes">
+                <div class="vote-block block">
+                    <h5 class="block-title vote-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                    <div class="block-content vote-content">
+                        <p>Этим летом в столице вновь
+                            организуют открытые
+                            тренировки на свежем воздухе
+                            для всех любителей
+                            активного образа жизни.
+                            Мы предлагаем вам выбрать
+                            активности, которыми вы
+                            готовы заниматься под
+                            руководством профессиональных
+                            инструкторов.</p>
+                    </div>
+                    <div class="block-footer vote-footer">
+                        <button><a href="vote-news.html">Голосовать</a></button>
+                        <p class="goal">
+                            +3
+                            <span>балла</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="vote-block block">
+                    <h5 class="block-title vote-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                    <div class="block-content vote-content">
+                        <p>Этим летом в столице вновь
+                            организуют открытые
+                            тренировки на свежем воздухе
+                            для всех любителей
+                            активного образа жизни.
+                            Мы предлагаем вам выбрать
+                            активности, которыми вы
+                            готовы заниматься под
+                            руководством профессиональных
+                            инструкторов.</p>
+                    </div>
+                    <div class="block-footer vote-footer">
+                        <button><a href="vote-news.html">Голосовать</a></button>
+                        <p class="goal">
+                            +3
+                            <span>балла</span>
+                        </p>
+                    </div>
+                </div>
+                <a href="#">
+                <div class="vote-block block ad">    </div>
+            </a>
+            </div>
+
+       </div>
+   </section>
+
+   <script>
+   let stars = document.querySelectorAll('form .stars input[type="radio"]');
+   let rateBtn = document.getElementById('torate');
+
+   stars.forEach(function(item){
+    item.addEventListener('click', function(){
+        if(!(rateBtn.classList.contains('enabled')) && rateBtn.hasAttribute('disabled')){
+            rateBtn.classList.add('enabled')
+            rateBtn.removeAttribute('disabled')
+        }
+        
+    })
+   })
+
+   </script>
+
+
+
+
+
+
+    <!-- Footer -->
+    <section class="prefooter-wrap">
+        <div class="prefooter">
+            <h5>Узнай результаты <br>
+                и подпишись на новости</h5>
+
+            <div class="soc-networks">
+
+                <a href="#" class="fb" target="_blank"></a>
+                <a href="#" class="tw" target="_blank"></a>
+                <a href="#" class="vk" target="_blank"></a>
+                <a href="#" class="ok" target="_blank"></a>
+                <a href="#" class="yt" target="_blank"></a>
+                <a href="#" class="ig" target="_blank"></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+
+            <ul class="menu">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Годовой отчет</a></li>
+            </ul>
+            <div class="other">
+                <p>Белсенді Атырау © 2019, Все права защищены.</p>
+                <p>Разработано в <a style="text-decoration:underline" target="_blank" href="http://okegroup.kz/">Oke Company</a></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal-wrap">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <ul>
+                    <li class="tab-links log-tab" onclick="activeTab(this)">Авторизация</li>
+                    <li class="tab-links reg-tab" onclick="activeTab(this)">Регистрация</li>
+                    <li>Default</li>
+                </ul>
+                <button class="close-modal">&#10006;</button>
+
+            </div>
+
+            <div class="login-modal">
+
+                <h6>Введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+                <input type="password" placeholder="Пароль">
+
+                <p> <input type="checkbox"> Я согласен с условиями <a href="#">оферты</a></p>
+                <p> <input type="checkbox"> Запомнить меня на этом устройстве</p>
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+
+
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получть помощь</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reg-modal">
+
+                <h6>Для регистрации в системе
+                    введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получить помощь</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/modal.js"></script>
+
+
+    <script>
+        // Menu active
+        let activePopup = document.querySelector('.js-toggle-menu');
+        let popupMenu = document.querySelector('.popup.popup-menu')
+
+        activePopup.addEventListener('click', () => {
+            popupMenu.classList.add('is-visible');
+        })
+
+        // Menu inactive
+        let inactivePopup = document.querySelector('.popup-close');
+        inactivePopup.addEventListener('click', () => {
+            popupMenu.classList.remove('is-visible');
+        })
+    </script>
+
+</body>
+</html>

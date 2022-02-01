@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<title>Қош келдіңіз!</title>
+		<!-- CSS Files -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="../assets/css/my-main-page.css">
+	<link rel="stylesheet" href="../assets/css/login.css">
+
+
+</head>
+<body>
+	
+	<div class="content-wrap">
+		<div class="content">
+			<a class="logo" href="index.html">
+				<img src="images/academy-logo-fill-auto.png" alt="">
+			</a>
+		<div class="login-form remember-password-wrap">
+			<h1 class="welcome">Zhanbolat Academy платформасына<br> қош келдіңіз!</h1>
+			<form action="">
+				<label for="email" class="main-label">Логин
+					<input type="email" id="email">
+				</label>
+				
+				<label for="password" class="main-label">Құпия сөз
+					<input type="password" id="password">
+				</label>
+					
+				<div class="options">
+					<label for="rememberme" class="options-label">
+						<input type="checkbox" id="rememberme">
+						Мені есте сақта
+					</label>
+
+					<a href="#forgetPass" role="button" class="forget-password" id="btnForgetPassword"> Құпия сөзді ұмыттыңызба?</a>
+
+				</div>
+
+				<a href="main.html" class="btn-login btn">Кіру</a>
+				
+
+			</form>
+			</div>
+
+
+			<div class="login-form forget-password-wrap">
+			<h1 class="welcome">Құпия сөзді қалпына келтіру</h1>
+			<form action="">
+				<label for="emailForget" class="main-label">Email
+					<input type="email" id="emailForget">
+				</label>
+				
+				<div class="options">
+					<a href="#" role="button" class="forget-password back">Кері оралу</a>
+				</div>
+
+				<a href="#" class="btn-login btn btnContinue">Жалғастыру</a>
+				
+
+			</form>
+			</div>
+
+			<div class="login-form check-email">
+			<h1 class="welcome">Email поштаңызды тексеріңіз</h1>
+
+				<div class="options d-flex justify-content-center">
+					<a href="#" role="button" class="forget-password back">Кері оралу</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let btnForgetPassword = document.getElementById('btnForgetPassword');
+		let forgetPasswordWrap = document.querySelector('.forget-password-wrap');
+		let rememberPasswordWrap = document.querySelector('.remember-password-wrap');
+
+
+
+		btnForgetPassword.addEventListener('click', function() {
+			rememberPasswordWrap.style.display = 'none';
+			forgetPasswordWrap.style.display = 'block';	
+		})
+
+		let btnBack = document.querySelectorAll('.back');
+
+		
+
+		btnBack[0].addEventListener('click', function() {
+			rememberPasswordWrap.style.display = 'block';
+			forgetPasswordWrap.style.display = 'none';	
+			checkEmail.style.display = 'none';	
+		})
+		btnBack[1].addEventListener('click', function() {
+			rememberPasswordWrap.style.display = 'block';
+			forgetPasswordWrap.style.display = 'none';	
+			checkEmail.style.display = 'none';	
+		})
+
+
+		let btnContinue = document.querySelector('.btnContinue');
+		let checkEmail = document.querySelector('.check-email');
+
+		btnContinue.addEventListener('click', function() {
+			rememberPasswordWrap.style.display = 'none';
+			forgetPasswordWrap.style.display = 'none';
+			checkEmail.style.display = 'block';	
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+
+html,body{
+    min-width: 320px;
+    max-width:1800px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    font-family: Regular;
+}
+a:hover{
+    text-decoration: none;
+    color: unset;
+}
+/* MY HEADER */
+header > *{
+    z-index: 2;
+}
+/* Logo */
+.logo{
+    background: url(../../images/Ellipse.png) no-repeat left 55%;
+    background-size: 35px;
+    color: white;
+    font-size: 2em;
+}
+
+/* Background first section */
+.my-bg{
+    height: 600px;
+    background: url(../../images/bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+.my-bg::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(21, 70, 83, 0.9);
+}
+
+.my-btn-login{
+     background:rgb(15, 42, 49);
+     border: none;
+}
+
+/* Message bg */
+.my-banner-message{
+    background: url(../../images/banner_bg.png) no-repeat center;
+    background-size: contain;
+    background-position-x: right;
+}
+
+.my-block-1{
+    background: url(../../images/img-1.png) no-repeat center;
+    background-position: 70% center;
+    min-height: 240px;
+}
+
+.my-h3{
+    color: #37414e;
+}
+.my-p{
+    color:#4b596c;
+}
+.my-block-2 button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.my-block-2 button:last-child{
+   border: 2px solid #67bf95;
+   background: url(../../images/facebook-logo.svg) no-repeat center;
+   background-size: 15px;
+}
+.my-block-2 button:first-child{
+    border: 2px solid #67bf95;
+    background: #67bf95 url(../../images/pencil.svg) no-repeat center;
+    background-size: 22px;
+}
+.my-p-2{
+    color: #bbdbca;
+}
+
+/* */
+.my-block-3{
+    height: 293px;
+    background: url(../../images/img-2.png) no-repeat;
+    background-size: cover;
+}
+@media (max-width:766px){
+    .my-block-3{
+        height: 220px;
+    }
+}
+@media (max-width:576px){
+    body{
+        font-size: 14px;
+    }
+    .my-bg{
+        height: 400px;
+       }
+    .my-block-3{
+        height: 116px;
+    }
+    .text-xs-center{
+        text-align: center;
+    }
+    div.my-video-block{
+        height: 360px;
+    }
+
+}
+
+/* */
+.my-block-4{
+    color: #37414e;
+}
+.my-block-4 h3{
+    color: #37414e;
+}
+.my-block-4 p{
+    color: #858b93;
+}
+.my-block-4 div div ul li{
+    min-width: 120px;
+
+}
+/* PRICE LIST*/
+.my-block-dark ul li{
+    background: #e9eef3;
+    padding: 20px 15px;
+    color: #6d737b;
+}
+.my-block-dark ul li:first-child{
+    background: #4b596c;
+    color: white;
+}
+.my-block-dark button{
+    background: #4b596c;
+    color: white;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    min-width: 120px;
+}
+/* */
+.my-block-green ul li{
+    background: #deebde;
+    padding: 20px 15px;
+    color: #879286;
+}
+
+.my-block-green ul li:first-child{
+    background: #58ad52;
+    color: white;
+}
+.my-block-green button{
+    background: #58ad52;
+    color: white;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    min-width: 120px;
+}
+/* */
+.my-block-blue ul li{
+    background: #dee9ec;
+    padding: 20px 15px;
+    color: #879286;
+    min-width: 135px;
+}
+
+
+.my-block-blue ul li:first-child{
+    background: #52a1ad;
+    color: white;
+}
+.my-block-blue button{
+    background: #52a1ad;
+    color: white;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    min-width: 120px;
+}
+
+/* Videoblock */
+
+.my-video-block{
+    background: url(../../images/bg-video.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    position: relative; 
+    max-height: 1000px;
+    z-index: 2;
+}
+.my-video-block::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(224, 49, 49, 0.76);
+    z-index: -1;
+}
+.my-video-block iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+}
+.my-video-block button{
+    width: 70px;
+    height: 70px;
+    background: url(../../images/play-bg.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+.my-video-block button:focus{
+    box-shadow: none;
+}
+iframe{
+    width: 100%;
+    height: 480px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+#exampleModalLong *{
+  background: transparent;
+  border: none;
+}
+/* NEXT */
+
+/* Contact block */
+.my-bg-contact{
+    height: 200px;
+    width: 100%;
+    background: url(../../images/contact-icon.png) no-repeat center;
+    background-size: contain;
+}
+.my-star-icon{
+   font-size: 1.5rem;
+   color: #ba393b
+}
+.form-group input,
+.form-group textarea{
+    background: rgba(0,0,0,0);
+    border:2px solid #4c4f53;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -ms-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    background: rgba(0,0,0,0);  
+    color: #fff;
+    border:2px solid #ba393b;
+    box-shadow: none;
+}
+/* FOOTER */
+.my-icons-block a{
+   display: block;
+   height: 30px;
+   width: 30px;
+   filter: grayscale(10%);
+   -webkit-filter: grayscale(10%);
+}
+.my-icons-block a:first-child{
+    background: url(../../images/instagram-xxl.png) no-repeat center;
+    background-size: contain;
+    margin-right: 15px;
+    }
+.my-icons-block a:last-child{
+background: url(../../images/vk-xxl.png) no-repeat center;
+background-size: contain;
+}
+/* FONTS */
+@font-face{
+    font-family: "Medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: "Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}

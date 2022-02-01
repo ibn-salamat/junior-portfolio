@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0
+}
+html{
+    min-width: 1024px;
+    margin: 0 auto;
+    font-family: RajdhaniMedium;
+}
+body{
+    min-width: 1024px;
+    background: black;
+}
+a{
+    color: red;
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'RajdhaniLight';
+    src: url(../fonts/Rajdhani-Light.ttf);
+}
+@font-face{
+    font-family: 'RajdhaniBold';
+    src: url(../fonts/Rajdhani-Bold.ttf);
+}
+@font-face{
+    font-family: 'RajdhaniRegular';
+    src: url(../fonts/Rajdhani-Regular.ttf);
+}
+@font-face{
+    font-family: 'RajdhaniMedium';
+    src: url(../fonts/Rajdhani-Medium.ttf);
+}
+@font-face{
+    font-family: 'RajdhaniSemi';
+    src: url(../fonts/Rajdhani-Bold.ttf);
+}
+/* HEADER */
+.header{
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    min-width: 1024px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+header.page_header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+#apple_icon{
+    height: 40px;
+    width:40px;
+    background: url(../images/icons/apple_icon.svg) center no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+#search_block{
+    order: 2;
+    height: 50px;
+    width: 50px;
+    background: url(../images/icons/search_icon.svg) center no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+ul.header_menu{
+    width: 70%;
+    display: flex;
+    order: 1;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1.5s ease;
+}
+a.menu_links{
+    font-family: RajdhaniLight;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+a.menu_links:hover{
+    opacity: 0.6;
+}
+/* search block */
+#search{
+  display: none;
+  width: 60%;
+  height: 50px;
+  background:rgba(0,0,0,0.1) url(../images/icons/search_icon.svg) left center no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 50px;
+  font-family: RajdhaniLight;
+
+}
+#btnxx{
+    height: 50px;
+    width: 50px;
+    background: url(../images/icons/cross.svg) center no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* menu styles */
+/* menu styles */
+
+
+/* First page */
+.first{
+    height: 640px;;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1600px;
+    background: url(images/bg-1.jpg) no-repeat center;
+}
+
+/* second */
+.second{
+    width: 100%;
+    height: 280px;
+    background: #000;
+    display: table;
+    border-top: 1px solid #444;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.second h2{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ccc;
+    font-size: 30px;
+}
+.second h2::after{
+    content: "-Уэйн Гретцки";
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #ccc;
+    font-family: "RajdhaniLight";
+}
+.third{
+    text-align: center;
+    height: 360px;
+    display: table;
+    width: 100%;
+}
+.third h2{
+    display: table-cell;
+    vertical-align: middle;
+}
+.termin{
+    background-image: linear-gradient(blue,red);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+/* FOOTER */
+footer .heading_footer{
+    background-image: linear-gradient(#fff,#f2f2f2);
+    width: 100%;
+    height: 170px;
+    position: relative;
+}
+.heading_footer h6{
+    font-family: RajdhaniBold;
+    font-size: 30px;
+    color: #434343;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+h6 #mercer{
+    background: url(../images/iphone_x_.jpg) center no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+.social{
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+.socials{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.socials a{
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+.socials a:nth-child(1){
+    background: url(../images/icons/linkedin-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(2){
+    background: url(../images/icons/instagram-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(3){
+    background: url(../images/icons/facebook-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(4){
+    background: url(../images/icons/skype-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+.socials a:nth-child(5){
+    background: url(../images/icons/place-logo.svg) no-repeat center;
+    background-size: 50px;
+}
+footer .main_footer{
+    width: 100%;
+    background: #f2f2f2;
+    padding: 30px 0 30px 0;
+}
+ul.footer_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+    max-width: 1600px;
+    margin: 0 auto;
+    list-style-type: none;
+    width: 70%;
+}
+.footer_menu a{
+    font-family: RajdhaniLight;
+    font-weight: bold;
+    font-size: 20px;
+    color:#434343;
+    padding: 5px;
+}
+.footer_menu a:hover{
+    color: black;
+}
+.license{
+    padding:25px  0 7px 0;
+    width: 100%;
+    background: #121212;
+}
+.license h6{
+    font-family: monospace;;
+    text-align: center;
+    padding: 15px; 
+    color: slategrey;
+    font-size: 14px;
+}
+.apple_logo{
+    height: 40px;
+    width: 100%;
+    background: black;
+    background: url(../images/icons/apple_icon.svg) center no-repeat;
+    background-size: 40px;
+}

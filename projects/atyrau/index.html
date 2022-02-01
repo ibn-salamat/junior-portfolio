@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Белсенді Атырау</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/basic.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/header&footer.css">
+    <link rel="stylesheet" href="assets/modal.css">
+
+    <style>
+        .header .sites-link.sites-link-0{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-sites">
+                    <div class="sites">
+                        <ul class="sites-list">
+                            <li class="sites-site"><a href="index.html" class="sites-link sites-link-0">Главная</a></li>
+                            <li class="sites-site"><a href="all-share-news.html" class="sites-link sites-link-1">Новости</a></li>
+                            <li class="sites-site"><a href="all-vote-news.html" class="sites-link sites-link-4">Голосования</a></li>
+                            <li class="sites-site"><a href="all-rate-news.html" class="sites-link sites-link-3">Городские новинки</a></li>
+                            <!--<li class="sites-site"><a href="#" class="sites-link sites-link-4"></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-buttons">
+                    <div class="city">
+                        <a href="" class="city-link">Атырау</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+                    </div>
+                    <div class="login lang" style="margin-left: 25px;">
+                        <select name="" class="lang-select" id="">
+                            <option value="">Русский</option>
+                            <option value="">Қазақша</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="header-links">
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item"><a href="" class="links-link" title="">Афиша</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Проект в лицах</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Результаты работы</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Акции</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-phone">
+                    <div class="phone">
+                        <a href="" class="phone-link">900</a>
+                        <p class="phone-text">По Казахстану бесплатно</p>
+                    </div>
+
+                </div>
+                <a class="header-toggle js-toggle-menu" href="#menu">Показать меню</a>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="popup popup-menu">
+        <div class="popup-container">
+            <a href="#" class="popup-close"></a>
+            <div class="city">
+                <a href="" class="city-link">Атырау</a>
+            </div>
+            <div class="login">
+                <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Афиша</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Проект в лицах</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Результаты работы</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Акции</a></li>
+                </ul>
+            </nav>
+
+           <!-- <div class="links">
+                <ul class="links-list">
+                    <li class="links-item"><a href="" class="links-link" title="">Голосования</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Городские новинки</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Новости проекта</a></li>
+                </ul>
+            </div>-->
+
+            <div class="sites">
+
+
+                <ul class="sites-list">
+                    <li class="sites-site"><a href="index.html" class="sites-link site-0">Главная</a></li>
+                    <li class="sites-site"><a href="all-share-news.html" class="sites-link site-1">Новости</a></li>
+                    <li class="sites-site"><a href="all-vote-news.html" class="sites-link site-3">Голосования</a></li>
+                    <li class="sites-site"><a href="all-rate-news.html" class="sites-link site-2">Городские новинки</a></li>
+                  <!--<li class="sites-site"><a href="#" class="sites-link site-4">Онлайн Маркет</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- First -->
+    <section class="first-container">
+        <div class="first-content">
+            <div class="st-left-wrap">
+                <div class="st-left">
+                    <div class="st-content">
+                        <div class="st-content-block users-icon">
+                            <p class="st-block-title">Активных граждан</p>
+                            <p class="st-block-number">25 654</p>
+                        </div>
+                        <div class="st-content-block votes-icon">
+                            <p class="st-block-title">Прошло голосований</p>
+                            <p class="st-block-number">54 505</p>
+                        </div>
+                        <div class="st-content-block opinions-icon">
+                            <p class="st-block-title">Принято мнений</p>
+                            <p class="st-block-number">6550</p>
+                        </div>
+                        <p id="byakim">ПРОЕКТ АКИМА</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="st-right"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Second  -->
+    <section class="container second-container">
+
+        <div class="app-left">
+
+        </div>
+        <div class="app-right">
+
+            <div class="other-functions">
+                <p id="city-function">Все общегородские голосования</p>
+                <p id="house-function">Ваш электронный дом</p>
+            </div>
+            <div class="app-download">
+                <div id="app-android">
+                    <p>Скачай на</p>
+                    <button></button>
+                </div>
+                <div id="app-ios">
+                    <p>Скачай на</p>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Third -->
+    <section class="third">
+        <h1 class="section-title">Как это работает?</h1>
+
+        <div class="steps">
+            <p class="step step-1">Регистрируйтесь</p>
+            <p class="step step-2">Проходите голосования <br>и получайте баллы</p>
+            <p class="step step-3">
+                Обменивайте баллы
+                <br> на городские услуги
+            </p>
+        </div>
+
+        <button class="reg-button reg" onclick="activeModal(this)">Регистрация</button>
+
+    </section>
+
+    <!-- Fourth -->
+    <section class="fourth-container">
+        <h2 class="title-section">Текущие голосования</h2>
+
+        <div class="blocks votes">
+            <div class="vote-block block">
+                <h5 class="block-title vote-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content vote-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer vote-footer">
+                    <button><a href="vote-news.html">Голосовать</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+            <div class="vote-block block">
+                <h5 class="block-title vote-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content vote-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer vote-footer">
+                    <button><a href="vote-news.html">Голосовать</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+            <div class="vote-block block">
+                <h5 class="block-title vote-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content vote-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer vote-footer">
+                    <button><a href="vote-news.html">Голосовать</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth -->
+    <section class="fifth-container">
+        <div class="slider">
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+
+            <div class="slide slide-1">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-4">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-5">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+            <div class="slide slide-6">
+                <div class="bottom">
+                    <p class="link-title">Спектакль Ленина</p>
+                    <p class="link-all">Все фотографии</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <button class="prevSlide slideBtn" onclick="prevSlide()"></button>
+        <button class="nextSlide slideBtn" onclick="nextSlide()"></button>
+    </section>
+
+    <!-- Sixth -->
+    <section class="sixth-container">
+        <h2 class="title-section">Городские новинки</h2>
+
+        <div class="blocks citynews">
+            <div class="citynews-block block">
+                <h5 class="block-title citynews-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content citynews-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer citynews-footer">
+                    <button><a href="rate-news.html">Оценить</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+            <div class="citynews-block block">
+                <h5 class="block-title citynews-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content citynews-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer citynews-footer">
+                    <button><a  href="rate-news.html">Оценить</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+            <div class="citynews-block block">
+                <h5 class="block-title citynews-title">Лето : спортивные тренировки на свежем воздухе</h5>
+                <div class="block-content citynews-content">
+                    <p>Этим летом в столице вновь
+                        организуют открытые
+                        тренировки на свежем воздухе
+                        для всех любителей
+                        активного образа жизни.
+                        Мы предлагаем вам выбрать
+                        активности, которыми вы
+                        готовы заниматься под
+                        руководством профессиональных
+                        инструкторов.</p>
+                </div>
+                <div class="block-footer citynews-footer">
+                    <button><a  href="rate-news.html">Оценить</a></button>
+                    <p class="goal">
+                        +3
+                        <span>балла</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- News content-->
+    <section class="news-container">
+
+        <h2 class="news-title">Новости</h2>
+
+        <div class="news-blocks">
+
+            <div class="block">
+                <div class="news-img">
+                    <img src="images/news-img.jpg" alt="">
+                    <p>27.03.2019</p>
+                </div>
+
+                <h5 class="news-heading">Анастасия Красных: «Возрождение Аргуновки — это наша гордость»</h5>
+
+                <p class="news-text">
+                    Книги посетители могут искать по электронному каталогу. Также создается новый каталог, по которому
+                    читатель сможет брать книги в одном районе, а сдавать в другом. Еще в библиотеках СВАО, в том числе
+                    в нашей Аргуновке, начали выдавать Единый читательский билет библиотек Москвы для удобства читателей
+                    и сотрудников. Считаю, что Единый читательский билет — это очередной... большой шаг библиотек Москвы
+                    к комфорту горожан. Я знаю, что уже выдано порядка 80 тысяч билетов
+                </p>
+
+                <div class="news-footer">
+                    <div class="buttons">
+                        <button class="fb"></button>
+                        <button class="tw"></button>
+                        <button class="vk"></button>
+                        <button class="ok"></button>
+                    </div>
+                    <a href="share-news.html">Читать дальше...</a>
+                </div>
+
+            </div>
+            <div class="block">
+                <div class="news-img">
+                    <img src="images/news-img.jpg" alt="">
+                    <p>27.03.2019</p>
+                </div>
+
+                <h5 class="news-heading">Анастасия Красных: «Возрождение Аргуновки — это наша гордость»</h5>
+
+                <p class="news-text">
+                    Книги посетители могут искать по электронному каталогу. Также создается новый каталог, по которому
+                    читатель сможет брать книги в одном районе, а сдавать в другом. Еще в библиотеках СВАО, в том числе
+                    в нашей Аргуновке, начали выдавать Единый читательский билет библиотек Москвы для удобства читателей
+                    и сотрудников. Считаю, что Единый читательский билет — это очередной... большой шаг библиотек Москвы
+                    к комфорту горожан. Я знаю, что уже выдано порядка 80 тысяч билетов
+                </p>
+
+                <div class="news-footer">
+                    <div class="buttons">
+                        <button class="fb"></button>
+                        <button class="tw"></button>
+                        <button class="vk"></button>
+                        <button class="ok"></button>
+                    </div>
+                    <a href="share-news.html">Читать дальше...</a>
+                </div>
+
+            </div>
+
+            <div class="block">
+                <div class="news-img">
+                    <img src="images/news-img.jpg" alt="">
+                    <p>27.03.2019</p>
+                </div>
+
+                <h5 class="news-heading">Анастасия Красных: «Возрождение Аргуновки — это наша гордость»</h5>
+
+                <p class="news-text">
+                    Книги посетители могут искать по электронному каталогу. Также создается новый каталог, по которому
+                    читатель сможет брать книги в одном районе, а сдавать в другом. Еще в библиотеках СВАО, в том числе
+                    в нашей Аргуновке, начали выдавать Единый читательский билет библиотек Москвы для удобства читателей
+                    и сотрудников. Считаю, что Единый читательский билет — это очередной... большой шаг библиотек Москвы
+                    к комфорту горожан. Я знаю, что уже выдано порядка 80 тысяч билетов
+                </p>
+
+                <div class="news-footer">
+                    <div class="buttons">
+                        <button class="fb"></button>
+                        <button class="tw"></button>
+                        <button class="vk"></button>
+                        <button class="ok"></button>
+                    </div>
+                    <a href="share-news.html">Читать дальше...</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <section class="prefooter-wrap">
+        <div class="prefooter">
+            <h5>Узнай результаты <br>
+                и подпишись на новости</h5>
+
+            <div class="soc-networks">
+
+                <a href="#" class="fb" target="_blank"></a>
+                <a href="#" class="tw" target="_blank"></a>
+                <a href="#" class="vk" target="_blank"></a>
+                <a href="#" class="ok" target="_blank"></a>
+                <a href="#" class="yt" target="_blank"></a>
+                <a href="#" class="ig" target="_blank"></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+
+            <ul class="menu">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Годовой отчет</a></li>
+            </ul>
+            <div class="other">
+                <p>Белсенді Атырау © 2019, Все права защищены.</p>
+                <p>Разработано в <a style="text-decoration:underline" target="_blank" href="http://okegroup.kz/">Oke Company</a></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal-wrap">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <ul>
+                    <li class="tab-links log-tab" onclick="activeTab(this)">Авторизация</li>
+                    <li class="tab-links reg-tab" onclick="activeTab(this)">Регистрация</li>
+                    <li>Default</li>
+                </ul>
+                <button class="close-modal">&#10006;</button>
+
+            </div>
+
+            <div class="login-modal">
+
+                <h6>Введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+                <input type="password" placeholder="Пароль">
+
+                <p> <input type="checkbox"> Я согласен с условиями <a href="#">оферты</a></p>
+                <p> <input type="checkbox"> Запомнить меня на этом устройстве</p>
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+
+
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получть помощь</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reg-modal">
+
+                <h6>Для регистрации в системе
+                    введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получить помощь</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/modal.js"></script>
+    <script>
+        // Menu active
+        let activePopup = document.querySelector('.js-toggle-menu');
+        let popupMenu = document.querySelector('.popup.popup-menu')
+
+        activePopup.addEventListener('click', () => {
+            popupMenu.classList.add('is-visible');
+        })
+
+        // Menu inactive
+        let inactivePopup = document.querySelector('.popup-close');
+        inactivePopup.addEventListener('click', () => {
+            popupMenu.classList.remove('is-visible');
+        })
+    </script>
+</body>
+
+</html>

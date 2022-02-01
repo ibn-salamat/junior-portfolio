@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Белсенді Атырау</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vote-news.css">
+    <link rel="stylesheet" href="assets/basic.css">
+    <link rel="stylesheet" href="assets/header&footer.css">
+    <link rel="stylesheet" href="assets/modal.css">
+</head>
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+<body>
+
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container">
+                <div class="header-sites">
+                    <div class="sites">
+                        <ul class="sites-list">
+                            <li class="sites-site"><a href="index.html" class="sites-link sites-link-0">Главная</a></li>
+                            <li class="sites-site"><a href="all-share-news.html" class="sites-link sites-link-1">Новости</a></li>
+                            <li class="sites-site"><a href="all-vote-news.html" class="sites-link sites-link-4">Голосования</a></li>
+                            <li class="sites-site"><a href="all-rate-news.html" class="sites-link sites-link-3">Городские новинки</a></li>
+                            <!--<li class="sites-site"><a href="#" class="sites-link sites-link-4"></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-buttons">
+                    <div class="city">
+                        <a href="" class="city-link">Атырау</a>
+                    </div>
+                    <div class="login">
+                        <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+                    </div>
+                    <div class="login lang" style="margin-left: 25px;">
+                        <select name="" class="lang-select" id="">
+                            <option value="">Русский</option>
+                            <option value="">Қазақша</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header-middle">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="index.html" class="logo"></a>
+                </div>
+                <div class="header-links">
+                    <div class="links">
+                        <ul class="links-list">
+                            <li class="links-item"><a href="" class="links-link" title="">Афиша</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Проект в лицах</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Результаты работы</a></li>
+                            <li class="links-item"><a href="" class="links-link" title="">Акции</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-phone">
+                    <div class="phone">
+                        <a href="" class="phone-link">900</a>
+                        <p class="phone-text">По Казахстану бесплатно</p>
+                    </div>
+
+                </div>
+                <a class="header-toggle js-toggle-menu" href="#menu">Показать меню</a>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="popup popup-menu">
+        <div class="popup-container">
+            <a href="#" class="popup-close"></a>
+            <div class="city">
+                <a href="" class="city-link">Атырау</a>
+            </div>
+            <div class="login">
+                <a href="#" class="login-link log" onclick="activeModal(this)">Войти</a>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="" class="menu-link">Афиша</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Проект в лицах</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Результаты работы</a></li>
+                    <li class="menu-item"><a href="" class="menu-link">Акции</a></li>
+                </ul>
+            </nav>
+
+           <!-- <div class="links">
+                <ul class="links-list">
+                    <li class="links-item"><a href="" class="links-link" title="">Голосования</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Городские новинки</a></li>
+                    <li class="links-item"><a href="" class="links-link" title="">Новости проекта</a></li>
+                </ul>
+            </div>-->
+
+            <div class="sites">
+
+
+                <ul class="sites-list">
+                    <li class="sites-site"><a href="index.html" class="sites-link site-0">Главная</a></li>
+                    <li class="sites-site"><a href="all-share-news.html" class="sites-link site-1">Новости</a></li>
+                    <li class="sites-site"><a href="all-vote-news.html" class="sites-link site-3">Голосования</a></li>
+                    <li class="sites-site"><a href="all-rate-news.html" class="sites-link site-2">Городские новинки</a></li>
+                  <!--<li class="sites-site"><a href="#" class="sites-link site-4">Онлайн Маркет</a></li>-->
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+   <!-- Content -->
+   <section class="content-wrap">
+    <div class="content">
+        <p class="goal-text"><span id="question-goal" class="goal">500 балл</span> за участие в голосовании</p>
+
+        <h1 class="vote-title">Новые сервисы для пассажиров метро</h1>
+        <p class="vote-description">Городской метрополитен — это не только
+             транспортное средство, на котором можно добраться из пункта 
+             А в пункт Б. Сейчас метро предоставляет пассажирам всё больше
+              сервисов: информационные панели, консультанты по маршруту, возможность оплаты проезда банковской картой и многое другое.
+             В ближайшее время планируется запустить еще несколько новых.</p>
+   
+             <div class="question-wrap">
+
+                    <div class="question-new">
+                        <h2 class="question">Устройства для копирования и печати.</h2>
+                        <form action="">
+                            <label for="q1-1">
+                                <input name="version" id="q1-1" type="radio"><p>Вариант 1</p>
+                            </label>
+                            <label for="q1-2">
+                                <input name="version" id="q1-2" type="radio"><p>Вариант 2</p>
+                            </label>
+                            <label for="q1-3">
+                                <input name="version" id="q1-3" type="radio"><p>Вариант 3</p>
+                            </label>
+                            <label for="q1-4" class="myVariant">
+                                <input name="version" id="q1-4" type="radio"><p>Свой вариант</p>
+                            </label>
+                        </form>
+                    </div>
+            
+                    <div class="question-new">
+                        <h2 class="question">Вопрос который должен быть здесь?</h2>
+                        <form action="">
+                            <label for="q2-1">
+                               <input name="version" id="q2-1" type="radio"> <p>Вариант 1</p>
+                            </label>
+                            <label for="q2-2">
+                               <input name="version" id="q2-2" type="radio"> <p>Вариант 2</p>
+                            </label>
+                            <label for="q2-3">
+                                <input name="version" id="q2-3" type="radio"><p>Вариант 3</p>
+                            </label>
+                             <label for="q2-4" class="myVariant">
+                                <input name="version" id="q2-4" type="radio"><p>Свой вариант</p>
+                            </label>
+                        </form>
+                    </div>
+            
+                    <div class="question-new">
+                        <h2 class="question">Вопрос который должен быть здесь?</h2>
+                        <img src="images/question-img.jpg" alt="">
+                        <form action="">
+                            <label for="q3-1">
+                                <input name="version" id="q3-1" type="radio"><p>Вариант 1</p>
+                            </label>
+                            <label for="q3-2">
+                                <input name="version" id="q3-2" type="radio"><p>Вариант 2</p>
+                            </label>
+                            <label for="q3-3">
+                                <input name="version" id="q3-3" type="radio"><p>Вариант 3</p>
+                            </label>
+                             <label for="q3-4" class="myVariant">
+                                <input name="version" id="q3-4" type="radio"><p>Свой вариант</p>
+                            </label>
+                        </form>
+                    </div>
+                    </div>
+
+                    <button class="finishVoteBtn" onclick="finishVote(this)">Завершить голосование</button>
+   
+            </div>
+   </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <section class="prefooter-wrap">
+        <div class="prefooter">
+            <h5>Узнай результаты <br>
+                и подпишись на новости</h5>
+
+            <div class="soc-networks">
+
+                <a href="#" class="fb" target="_blank"></a>
+                <a href="#" class="tw" target="_blank"></a>
+                <a href="#" class="vk" target="_blank"></a>
+                <a href="#" class="ok" target="_blank"></a>
+                <a href="#" class="yt" target="_blank"></a>
+                <a href="#" class="ig" target="_blank"></a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer-wrap">
+        <footer>
+
+            <ul class="menu">
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Годовой отчет</a></li>
+            </ul>
+            <div class="other">
+                <p>Белсенді Атырау © 2019, Все права защищены.</p>
+                <p>Разработано в <a style="text-decoration:underline" target="_blank" href="http://okegroup.kz/">Oke Company</a></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+    <!-- Modal -->
+    <div class="modal-wrap">
+
+        <div class="modal">
+
+            <div class="modal-header">
+
+                <ul>
+                    <li class="tab-links log-tab" onclick="activeTab(this)">Авторизация</li>
+                    <li class="tab-links reg-tab" onclick="activeTab(this)">Регистрация</li>
+                    <li>Default</li>
+                </ul>
+                <button class="close-modal">&#10006;</button>
+
+            </div>
+
+            <div class="login-modal">
+
+                <h6>Введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+                <input type="password" placeholder="Пароль">
+
+                <p> <input type="checkbox"> Я согласен с условиями <a href="#">оферты</a></p>
+                <p> <input type="checkbox"> Запомнить меня на этом устройстве</p>
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+
+
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получть помощь</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reg-modal">
+
+                <h6>Для регистрации в системе
+                    введите адрес электронной почты</h6>
+
+                <input type="email" placeholder="Ваш email">
+
+                <div class="modal-footer">
+                    <button>Войти</button>
+                    <div class="links">
+                        <p><a href="#">Нужна помощь?</a></p>
+                        <p><a href="#">Получить помощь</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="assets/modal.js"></script>
+
+
+    <div class="finish-modal">
+        <p></p>
+    </div>
+
+    <script>
+
+            document.querySelector('.finish-modal p').innerHTML = 'Спасибо за голосование. Вы получили ' + '<strong>' + document.getElementById('question-goal').textContent + 'ов' + '</strong>';
+
+            function finishVote(elem) {
+                document.querySelector('.finish-modal').classList.add('active');
+                elem.classList.add('disabled');
+                elem.setAttribute("disabled", true);
+
+                setTimeout( () => {
+                    document.querySelector('.finish-modal').classList.remove('active'); 
+                },1500)
+    
+            }
+    
+            let questions = document.querySelectorAll('.question-new');
+            let radioBtns = document.querySelectorAll('input[name="version"]')
+    
+            radioBtns.forEach(function (item, i) {
+                item.addEventListener('click', function () {
+    
+                let parentLabels = item.parentElement.parentElement.children;
+                
+    
+                for( let i = 0; i < parentLabels.length; i++){
+                    parentLabels[i].classList.remove('active')
+                }
+    
+                if(item.checked){
+                    item.parentElement.classList.add('active')
+                }
+    
+                if(item.parentElement.classList.contains('myVariant')){
+                    let myAnswer = prompt('Ваш вариант', 'Свой вариант');
+                    if(myAnswer == ''){
+                        myAnswer = 'Свой вариант';
+                    }
+                    item.parentElement.children[1].innerHTML = myAnswer;
+
+                }
+              
+    
+                })
+            })
+    
+    
+        </script>
+    
+
+    <script>
+        // Menu active
+        let activePopup = document.querySelector('.js-toggle-menu');
+        let popupMenu = document.querySelector('.popup.popup-menu')
+
+        activePopup.addEventListener('click', () => {
+            popupMenu.classList.add('is-visible');
+        })
+
+        // Menu inactive
+        let inactivePopup = document.querySelector('.popup-close');
+        inactivePopup.addEventListener('click', () => {
+            popupMenu.classList.remove('is-visible');
+        })
+    </script>
+
+</body>
+</html>

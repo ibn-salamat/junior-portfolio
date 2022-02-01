@@ -1,0 +1,128 @@
+body{
+    max-width: 1400px;
+    min-width: 480px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: "Open Sans Regular"
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.my-block-1{
+    min-height: 600px;
+    background: #37abc8 url(../imgs/bg-1.jpg) no-repeat center;
+    background-size: cover;
+}
+/* TOGGLER */
+#navbar-toggler{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 70px;
+    background: transparent;
+}
+
+#navbar-toggler div{
+    position: relative;
+    border-radius: 5px;
+}
+#navbar-toggler div,
+#navbar-toggler div::after,
+#navbar-toggler div::before{
+    width: 36px;
+    height: 4px;
+    background: #fff;
+
+}
+#navbar-toggler div::after{
+    top: 8px;
+}
+#navbar-toggler div::before{
+    top: -8px;
+}
+#navbar-toggler div::after,
+#navbar-toggler div::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+}
+
+/* navbar-brand */
+.navbar-brand{
+    font-size: 40px;
+    background: url(../imgs/logo.png) no-repeat center left;
+}
+/* first block */
+h2{
+    font-family: "Open Sans Light";
+    color:white;
+}
+.my-search-input{
+    flex-basis: 40%;
+    padding: 10px 15px;
+}
+.my-search-btn{
+    padding: 10px 40px;
+    color: white;
+    background: #fd4f32;
+}
+
+/* block 2*/
+#my-block-2{
+    background:#eeeeee;
+    padding:80px 60px;
+}
+#my-block-3{
+    padding:80px 60px;
+}
+@media(max-width:611px){
+    #my-block-2{
+         padding:80px 10px;
+        }
+    #my-block-3{
+        padding:80px 30px;
+    }
+}
+/* footer */
+footer ul li a{
+    padding: 5px 7px;
+    color: #323232;
+    font-weight: bold;
+}
+footer ul li a:hover{
+    color: #555555;
+}
+@media(max-width:768px){
+    footer ul{
+        order: -2;
+    }
+
+}
+footer ul
+
+
+/* Basic styles */
+.font-bold{
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+button,input{
+    border: none;
+    outline: none;
+}
+/* import fonts */
+@font-face{
+    font-family: "Open Sans Light";
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face{
+    font-family: "Open Sans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
