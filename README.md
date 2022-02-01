@@ -1,2 +1,3 @@
 # junior-portfolio
-My Junior portfolio
+
+My portfolio that contains junior projects
